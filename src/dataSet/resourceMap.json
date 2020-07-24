@@ -1,0 +1,8449 @@
+{
+	"hypervisors": [
+		{
+			"cAZ": "az1",
+			"cHAs": [],
+			"running_status": "UP",
+			"type": "host",
+			"hostname": "397A6EC1-EFD0-7282-E811-879FC202B00B",
+			"numa_topology": {
+				"cells": [
+					{
+						"memory_used": 70929,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								10,
+								34
+							],
+							[
+								11,
+								35
+							]
+						],
+						"cpuset": [
+							[
+								10,
+								34
+							],
+							[
+								11,
+								35
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 4,
+						"cpus_reserved_num": 0,
+						"memory": 194741,
+						"mempages": [
+							{
+								"total": 49853741,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 18157824
+							},
+							{
+								"total": 0,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 0
+							}
+						],
+						"cpus_num": 4,
+						"id": 0,
+						"memory_reserved": 0
+					},
+					{
+						"memory_used": 6417,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								12,
+								36
+							],
+							[
+								13,
+								37
+							],
+							[
+								14,
+								38
+							],
+							[
+								15,
+								39
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								19,
+								43
+							],
+							[
+								20,
+								44
+							],
+							[
+								21,
+								45
+							],
+							[
+								22,
+								46
+							],
+							[
+								23,
+								47
+							]
+						],
+						"cpuset": [
+							[
+								12,
+								36
+							],
+							[
+								13,
+								37
+							],
+							[
+								14,
+								38
+							],
+							[
+								15,
+								39
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								19,
+								43
+							],
+							[
+								20,
+								44
+							],
+							[
+								21,
+								45
+							],
+							[
+								22,
+								46
+							],
+							[
+								23,
+								47
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 24,
+						"cpus_reserved_num": 0,
+						"memory": 196608,
+						"mempages": [
+							{
+								"total": 50331648,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 1642752
+							},
+							{
+								"total": 0,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 0
+							}
+						],
+						"cpus_num": 24,
+						"id": 1,
+						"id": 1,
+						"memory_reserved": 0
+					}
+				]
+			},
+			"cpu_info": {
+				"vendor": "Intel",
+				"model": "Skylake-Server",
+				"arch": "x86_64",
+				"features": [
+					"pku",
+					"rtm",
+					"tsc_adjust",
+					"vme",
+					"pge",
+					"xsaveopt",
+					"smep",
+					"fpu",
+					"lm",
+					"tsc",
+					"adx",
+					"fxsr",
+					"tm",
+					"pclmuldq",
+					"xgetbv1",
+					"tsc-deadline",
+					"arat",
+					"de",
+					"aes",
+					"pse",
+					"sse",
+					"f16c",
+					"ds",
+					"mpx",
+					"avx512f",
+					"avx2",
+					"pbe",
+					"mbm_local",
+					"cx16",
+					"ds_cpl",
+					"movbe",
+					"cmt",
+					"vmx",
+					"sep",
+					"avx512dq",
+					"xsave",
+					"erms",
+					"hle",
+					"est",
+					"smx",
+					"abm",
+					"sse4.1",
+					"sse4.2",
+					"ssbd",
+					"acpi",
+					"popcnt",
+					"mmx",
+					"osxsave",
+					"clwb",
+					"dca",
+					"pdcm",
+					"invtsc",
+					"tm2",
+					"lahf_lm",
+					"pcid",
+					"rdrand",
+					"avx512vl",
+					"x2apic",
+					"smap",
+					"clflush",
+					"dtes64",
+					"xtpr",
+					"avx512bw",
+					"msr",
+					"fma",
+					"cx8",
+					"mce",
+					"avx512cd",
+					"mca",
+					"mbm_total",
+					"rdseed",
+					"apic",
+					"fsgsbase",
+					"rdtscp",
+					"ssse3",
+					"pse36",
+					"mtrr",
+					"avx",
+					"syscall",
+					"invpcid",
+					"cmov",
+					"spec-ctrl",
+					"clflushopt",
+					"pat",
+					"3dnowprefetch",
+					"nx",
+					"pae",
+					"ht",
+					"pdpe1gb",
+					"xsavec",
+					"pni",
+					"sse2",
+					"ss",
+					"bmi1",
+					"bmi2",
+					"xsaves"
+				]
+			},
+			"operation_status": "enabled",
+			"cRegion": "az1.dc12",
+			"bandwidths": []
+		},
+		{
+			"cAZ": "az1",
+			"cHAs": [
+				{
+					"name": "Srv_GRP",
+					"metadatas": [
+						{
+							"value": "true",
+							"key": "Srv_GRP",
+							"op": "="
+						},
+						{
+							"value": "az1.dc12",
+							"key": "availability_zone",
+							"op": "="
+						}
+					]
+				}
+			],
+			"running_status": "UP",
+			"type": "host",
+			"hostname": "0E73AB98-0A34-A1BE-E811-ACA2CA07B585",
+			"numa_topology": {
+				"cells": [
+					{
+						"memory_used": 12689,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								0,
+								24
+							],
+							[
+								3,
+								27
+							],
+							[
+								4,
+								28
+							],
+							[
+								5,
+								29
+							],
+							[
+								6,
+								30
+							],
+							[
+								7,
+								31
+							],
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								11,
+								35
+							]
+						],
+						"cpuset": [
+							[
+								0,
+								24
+							],
+							[
+								3,
+								27
+							],
+							[
+								4,
+								28
+							],
+							[
+								5,
+								29
+							],
+							[
+								6,
+								30
+							],
+							[
+								7,
+								31
+							],
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								11,
+								35
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 20,
+						"cpus_reserved_num": 0,
+						"memory": 194741,
+						"mempages": [
+							{
+								"total": 2929965,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 2199808
+							},
+							{
+								"total": 179,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 4
+							}
+						],
+						"cpus_num": 20,
+						"id": 0,
+						"memory_reserved": 0
+					},
+					{
+						"memory_used": 11665,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								14,
+								38
+							],
+							[
+								15,
+								39
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								19,
+								43
+							],
+							[
+								20,
+								44
+							],
+							[
+								21,
+								45
+							],
+							[
+								22,
+								46
+							],
+							[
+								23,
+								47
+							]
+						],
+						"cpuset": [
+							[
+								14,
+								38
+							],
+							[
+								15,
+								39
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								19,
+								43
+							],
+							[
+								20,
+								44
+							],
+							[
+								21,
+								45
+							],
+							[
+								22,
+								46
+							],
+							[
+								23,
+								47
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 20,
+						"cpus_reserved_num": 0,
+						"memory": 196608,
+						"mempages": [
+							{
+								"total": 3407872,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 2986240
+							},
+							{
+								"total": 179,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 0
+							}
+						],
+						"cpus_num": 20,
+						"id": 1,
+						"memory_reserved": 0
+					}
+				]
+			},
+			"cpu_info": {
+				"vendor": "Intel",
+				"model": "Skylake-Server",
+				"arch": "x86_64",
+				"features": [
+					"pku",
+					"rtm",
+					"tsc_adjust",
+					"vme",
+					"pge",
+					"xsaveopt",
+					"smep",
+					"fpu",
+					"lm",
+					"tsc",
+					"adx",
+					"fxsr",
+					"tm",
+					"pclmuldq",
+					"xgetbv1",
+					"tsc-deadline",
+					"arat",
+					"de",
+					"aes",
+					"pse",
+					"sse",
+					"f16c",
+					"ds",
+					"mpx",
+					"avx512f",
+					"avx2",
+					"pbe",
+					"mbm_local",
+					"cx16",
+					"ds_cpl",
+					"movbe",
+					"cmt",
+					"vmx",
+					"sep",
+					"avx512dq",
+					"xsave",
+					"erms",
+					"hle",
+					"est",
+					"smx",
+					"abm",
+					"sse4.1",
+					"sse4.2",
+					"ssbd",
+					"acpi",
+					"popcnt",
+					"mmx",
+					"osxsave",
+					"clwb",
+					"dca",
+					"pdcm",
+					"invtsc",
+					"tm2",
+					"lahf_lm",
+					"pcid",
+					"rdrand",
+					"avx512vl",
+					"x2apic",
+					"smap",
+					"clflush",
+					"dtes64",
+					"xtpr",
+					"avx512bw",
+					"msr",
+					"fma",
+					"cx8",
+					"mce",
+					"avx512cd",
+					"mca",
+					"mbm_total",
+					"rdseed",
+					"apic",
+					"fsgsbase",
+					"rdtscp",
+					"ssse3",
+					"pse36",
+					"mtrr",
+					"avx",
+					"syscall",
+					"invpcid",
+					"cmov",
+					"spec-ctrl",
+					"clflushopt",
+					"pat",
+					"3dnowprefetch",
+					"nx",
+					"pae",
+					"ht",
+					"pdpe1gb",
+					"xsavec",
+					"pni",
+					"sse2",
+					"ss",
+					"bmi1",
+					"bmi2",
+					"xsaves"
+				]
+			},
+			"operation_status": "enabled",
+			"cRegion": "az1.dc12",
+			"bandwidths": []
+		},
+		{
+			"cAZ": "az1",
+			"cHAs": [
+				{
+					"name": "Srv_GRP",
+					"metadatas": [
+						{
+							"value": "true",
+							"key": "Srv_GRP",
+							"op": "="
+						},
+						{
+							"value": "az1.dc12",
+							"key": "availability_zone",
+							"op": "="
+						}
+					]
+				},
+				{
+					"name": "EPC_HA_1",
+					"metadatas": [
+						{
+							"value": "true",
+							"key": "EPC_HA_1",
+							"op": "="
+						},
+						{
+							"value": "true",
+							"key": "win2008",
+							"op": "="
+						},
+						{
+							"value": "az1.dc12",
+							"key": "availability_zone",
+							"op": "="
+						}
+					]
+				},
+				{
+					"name": "EPC_HA_2",
+					"metadatas": [
+						{
+							"value": "true",
+							"key": "EPC_HA_2",
+							"op": "="
+						},
+						{
+							"value": "az1.dc12",
+							"key": "availability_zone",
+							"op": "="
+						}
+					]
+				}
+			],
+			"running_status": "UP",
+			"type": "host",
+			"hostname": "C27C9FC1-EFD0-269A-E811-879FC46D2E20",
+			"numa_topology": {
+				"cells": [
+					{
+						"memory_used": 11665,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								2,
+								26
+							],
+							[
+								27,
+								3
+							],
+							[
+								28,
+								4
+							],
+							[
+								5,
+								29
+							],
+							[
+								30,
+								6
+							],
+							[
+								31,
+								7
+							],
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								35,
+								11
+							]
+						],
+						"cpuset": [
+							[
+								2,
+								26
+							],
+							[
+								27,
+								3
+							],
+							[
+								28,
+								4
+							],
+							[
+								5,
+								29
+							],
+							[
+								30,
+								6
+							],
+							[
+								31,
+								7
+							],
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								35,
+								11
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 20,
+						"cpus_reserved_num": 0,
+						"memory": 194741,
+						"mempages": [
+							{
+								"total": 2929965,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 2986240
+							},
+							{
+								"total": 179,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 0
+							}
+						],
+						"cpus_num": 20,
+						"id": 0,
+						"memory_reserved": 0
+					},
+					{
+						"memory_used": 27613,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								36,
+								12
+							],
+							[
+								13,
+								37
+							],
+							[
+								38,
+								14
+							],
+							[
+								39,
+								15
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								43,
+								19
+							],
+							[
+								44,
+								20
+							],
+							[
+								21,
+								45
+							],
+							[
+								46,
+								22
+							],
+							[
+								47,
+								23
+							]
+						],
+						"cpuset": [
+							[
+								36,
+								12
+							],
+							[
+								13,
+								37
+							],
+							[
+								38,
+								14
+							],
+							[
+								39,
+								15
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								43,
+								19
+							],
+							[
+								44,
+								20
+							],
+							[
+								21,
+								45
+							],
+							[
+								46,
+								22
+							],
+							[
+								47,
+								23
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 24,
+						"cpus_reserved_num": 0,
+						"memory": 196608,
+						"mempages": [
+							{
+								"total": 3407872,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 2350336
+							},
+							{
+								"total": 179,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 18
+							}
+						],
+						"cpus_num": 24,
+						"id": 1,
+						"memory_reserved": 0
+					}
+				]
+			},
+			"cpu_info": {
+				"vendor": "Intel",
+				"model": "Skylake-Server",
+				"arch": "x86_64",
+				"features": [
+					"pku",
+					"rtm",
+					"tsc_adjust",
+					"vme",
+					"pge",
+					"xsaveopt",
+					"smep",
+					"fpu",
+					"lm",
+					"tsc",
+					"adx",
+					"fxsr",
+					"tm",
+					"pclmuldq",
+					"xgetbv1",
+					"tsc-deadline",
+					"arat",
+					"de",
+					"aes",
+					"pse",
+					"sse",
+					"f16c",
+					"ds",
+					"mpx",
+					"avx512f",
+					"avx2",
+					"pbe",
+					"mbm_local",
+					"cx16",
+					"ds_cpl",
+					"movbe",
+					"cmt",
+					"vmx",
+					"sep",
+					"avx512dq",
+					"xsave",
+					"erms",
+					"hle",
+					"est",
+					"smx",
+					"abm",
+					"sse4.1",
+					"sse4.2",
+					"ssbd",
+					"acpi",
+					"popcnt",
+					"mmx",
+					"osxsave",
+					"clwb",
+					"dca",
+					"pdcm",
+					"invtsc",
+					"tm2",
+					"lahf_lm",
+					"pcid",
+					"rdrand",
+					"avx512vl",
+					"x2apic",
+					"smap",
+					"clflush",
+					"dtes64",
+					"xtpr",
+					"avx512bw",
+					"msr",
+					"fma",
+					"cx8",
+					"mce",
+					"avx512cd",
+					"mca",
+					"mbm_total",
+					"rdseed",
+					"apic",
+					"fsgsbase",
+					"rdtscp",
+					"ssse3",
+					"pse36",
+					"mtrr",
+					"avx",
+					"syscall",
+					"invpcid",
+					"cmov",
+					"spec-ctrl",
+					"clflushopt",
+					"pat",
+					"3dnowprefetch",
+					"nx",
+					"pae",
+					"ht",
+					"pdpe1gb",
+					"xsavec",
+					"pni",
+					"sse2",
+					"ss",
+					"bmi1",
+					"bmi2",
+					"xsaves"
+				]
+			},
+			"operation_status": "enabled",
+			"cRegion": "az1.dc12",
+			"bandwidths": []
+		},
+		{
+			"cAZ": "az1",
+			"cHAs": [],
+			"running_status": "DOWN",
+			"type": "host",
+			"hostname": "1573AB98-0A34-6EBB-E811-AEA272152018",
+			"numa_topology": {
+				"cells": [
+					{
+						"memory_used": 12689,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								0,
+								24
+							],
+							[
+								3,
+								27
+							],
+							[
+								4,
+								28
+							],
+							[
+								5,
+								29
+							],
+							[
+								6,
+								30
+							],
+							[
+								7,
+								31
+							],
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								11,
+								35
+							]
+						],
+						"cpuset": [
+							[
+								0,
+								24
+							],
+							[
+								3,
+								27
+							],
+							[
+								4,
+								28
+							],
+							[
+								5,
+								29
+							],
+							[
+								6,
+								30
+							],
+							[
+								7,
+								31
+							],
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								11,
+								35
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 20,
+						"cpus_reserved_num": 0,
+						"memory": 194741,
+						"mempages": [
+							{
+								"total": 2929965,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 2199808
+							},
+							{
+								"total": 179,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 4
+							}
+						],
+						"cpus_num": 20,
+						"id": 0,
+						"memory_reserved": 0
+					},
+					{
+						"memory_used": 11665,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								14,
+								38
+							],
+							[
+								15,
+								39
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								19,
+								43
+							],
+							[
+								20,
+								44
+							],
+							[
+								21,
+								45
+							],
+							[
+								22,
+								46
+							],
+							[
+								23,
+								47
+							]
+						],
+						"cpuset": [
+							[
+								14,
+								38
+							],
+							[
+								15,
+								39
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								19,
+								43
+							],
+							[
+								20,
+								44
+							],
+							[
+								21,
+								45
+							],
+							[
+								22,
+								46
+							],
+							[
+								23,
+								47
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 20,
+						"cpus_reserved_num": 0,
+						"memory": 196608,
+						"mempages": [
+							{
+								"total": 3407872,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 2986240
+							},
+							{
+								"total": 179,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 0
+							}
+						],
+						"cpus_num": 20,
+						"id": 1,
+						"memory_reserved": 0
+					}
+				]
+			},
+			"cpu_info": {
+				"vendor": "Intel",
+				"model": "Skylake-Server",
+				"arch": "x86_64",
+				"features": [
+					"pku",
+					"rtm",
+					"tsc_adjust",
+					"vme",
+					"pge",
+					"xsaveopt",
+					"smep",
+					"fpu",
+					"lm",
+					"tsc",
+					"adx",
+					"fxsr",
+					"tm",
+					"pclmuldq",
+					"xgetbv1",
+					"tsc-deadline",
+					"arat",
+					"de",
+					"aes",
+					"pse",
+					"sse",
+					"f16c",
+					"ds",
+					"mpx",
+					"avx512f",
+					"avx2",
+					"pbe",
+					"mbm_local",
+					"cx16",
+					"ds_cpl",
+					"movbe",
+					"cmt",
+					"vmx",
+					"sep",
+					"avx512dq",
+					"xsave",
+					"erms",
+					"hle",
+					"est",
+					"smx",
+					"abm",
+					"sse4.1",
+					"sse4.2",
+					"ssbd",
+					"acpi",
+					"popcnt",
+					"mmx",
+					"osxsave",
+					"clwb",
+					"dca",
+					"pdcm",
+					"invtsc",
+					"tm2",
+					"lahf_lm",
+					"pcid",
+					"rdrand",
+					"avx512vl",
+					"x2apic",
+					"smap",
+					"clflush",
+					"dtes64",
+					"xtpr",
+					"avx512bw",
+					"msr",
+					"fma",
+					"cx8",
+					"mce",
+					"avx512cd",
+					"mca",
+					"mbm_total",
+					"rdseed",
+					"apic",
+					"fsgsbase",
+					"rdtscp",
+					"ssse3",
+					"pse36",
+					"mtrr",
+					"avx",
+					"syscall",
+					"invpcid",
+					"cmov",
+					"spec-ctrl",
+					"clflushopt",
+					"pat",
+					"3dnowprefetch",
+					"nx",
+					"pae",
+					"ht",
+					"pdpe1gb",
+					"xsavec",
+					"pni",
+					"sse2",
+					"ss",
+					"bmi1",
+					"bmi2",
+					"xsaves"
+				]
+			},
+			"operation_status": "enabled",
+			"cRegion": "az1.dc12",
+			"bandwidths": []
+		},
+		{
+			"cAZ": "az1",
+			"cHAs": [
+				{
+					"name": "test",
+					"metadatas": [
+						{
+							"value": "true",
+							"key": "CMCC",
+							"op": "="
+						},
+						{
+							"value": "az1.dc12",
+							"key": "availability_zone",
+							"op": "="
+						}
+					]
+				}
+			],
+			"running_status": "UP",
+			"type": "host",
+			"hostname": "00843EC1-EFD0-8B84-E811-B0948299A1EF",
+			"numa_topology": {
+				"cells": [
+					{
+						"memory_used": 62737,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								35,
+								11
+							]
+						],
+						"cpuset": [
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								35,
+								11
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 8,
+						"cpus_reserved_num": 0,
+						"memory": 194741,
+						"mempages": [
+							{
+								"total": 49853741,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 16060672
+							},
+							{
+								"total": 0,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 0
+							}
+						],
+						"cpus_num": 8,
+						"id": 0,
+						"memory_reserved": 0
+					},
+					{
+						"memory_used": 6417,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								36,
+								12
+							],
+							[
+								13,
+								37
+							],
+							[
+								38,
+								14
+							],
+							[
+								39,
+								15
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								43,
+								19
+							],
+							[
+								44,
+								20
+							],
+							[
+								21,
+								45
+							],
+							[
+								46,
+								22
+							],
+							[
+								47,
+								23
+							]
+						],
+						"cpuset": [
+							[
+								36,
+								12
+							],
+							[
+								13,
+								37
+							],
+							[
+								38,
+								14
+							],
+							[
+								39,
+								15
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								43,
+								19
+							],
+							[
+								44,
+								20
+							],
+							[
+								21,
+								45
+							],
+							[
+								46,
+								22
+							],
+							[
+								47,
+								23
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 24,
+						"cpus_reserved_num": 0,
+						"memory": 196608,
+						"mempages": [
+							{
+								"total": 50331648,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 1642752
+							},
+							{
+								"total": 0,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 0
+							}
+						],
+						"cpus_num": 24,
+						"id": 1,
+						"memory_reserved": 0
+					}
+				]
+			},
+			"cpu_info": {
+				"vendor": "Intel",
+				"model": "Skylake-Server",
+				"arch": "x86_64",
+				"features": [
+					"pku",
+					"rtm",
+					"tsc_adjust",
+					"vme",
+					"pge",
+					"xsaveopt",
+					"smep",
+					"fpu",
+					"lm",
+					"tsc",
+					"adx",
+					"fxsr",
+					"tm",
+					"pclmuldq",
+					"xgetbv1",
+					"tsc-deadline",
+					"arat",
+					"de",
+					"aes",
+					"pse",
+					"sse",
+					"f16c",
+					"ds",
+					"mpx",
+					"avx512f",
+					"avx2",
+					"pbe",
+					"mbm_local",
+					"cx16",
+					"ds_cpl",
+					"movbe",
+					"cmt",
+					"vmx",
+					"sep",
+					"avx512dq",
+					"xsave",
+					"erms",
+					"hle",
+					"est",
+					"smx",
+					"abm",
+					"sse4.1",
+					"sse4.2",
+					"ssbd",
+					"acpi",
+					"popcnt",
+					"mmx",
+					"osxsave",
+					"clwb",
+					"dca",
+					"pdcm",
+					"invtsc",
+					"tm2",
+					"lahf_lm",
+					"pcid",
+					"rdrand",
+					"avx512vl",
+					"x2apic",
+					"smap",
+					"clflush",
+					"dtes64",
+					"xtpr",
+					"avx512bw",
+					"msr",
+					"fma",
+					"cx8",
+					"mce",
+					"avx512cd",
+					"mca",
+					"mbm_total",
+					"rdseed",
+					"apic",
+					"fsgsbase",
+					"rdtscp",
+					"ssse3",
+					"pse36",
+					"mtrr",
+					"avx",
+					"syscall",
+					"invpcid",
+					"cmov",
+					"spec-ctrl",
+					"clflushopt",
+					"pat",
+					"3dnowprefetch",
+					"nx",
+					"pae",
+					"ht",
+					"pdpe1gb",
+					"xsavec",
+					"pni",
+					"sse2",
+					"ss",
+					"bmi1",
+					"bmi2",
+					"xsaves"
+				]
+			},
+			"operation_status": "enabled",
+			"cRegion": "az1.dc12",
+			"bandwidths": []
+		},
+		{
+			"cAZ": "az1",
+			"cHAs": [],
+			"running_status": "UP",
+			"type": "host",
+			"hostname": "EC813EC1-EFD0-DAA8-E811-BA94741174B3",
+			"numa_topology": {
+				"cells": [
+					{
+						"memory_used": 62737,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								35,
+								11
+							]
+						],
+						"cpuset": [
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								35,
+								11
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 8,
+						"cpus_reserved_num": 0,
+						"memory": 194741,
+						"mempages": [
+							{
+								"total": 49853741,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 16060672
+							},
+							{
+								"total": 0,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 0
+							}
+						],
+						"cpus_num": 8,
+						"id": 0,
+						"memory_reserved": 0
+					},
+					{
+						"memory_used": 6417,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								36,
+								12
+							],
+							[
+								13,
+								37
+							],
+							[
+								38,
+								14
+							],
+							[
+								39,
+								15
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								43,
+								19
+							],
+							[
+								44,
+								20
+							],
+							[
+								21,
+								45
+							],
+							[
+								46,
+								22
+							],
+							[
+								47,
+								23
+							]
+						],
+						"cpuset": [
+							[
+								36,
+								12
+							],
+							[
+								13,
+								37
+							],
+							[
+								38,
+								14
+							],
+							[
+								39,
+								15
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								43,
+								19
+							],
+							[
+								44,
+								20
+							],
+							[
+								21,
+								45
+							],
+							[
+								46,
+								22
+							],
+							[
+								47,
+								23
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 24,
+						"cpus_reserved_num": 0,
+						"memory": 196608,
+						"mempages": [
+							{
+								"total": 50331648,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 1642752
+							},
+							{
+								"total": 0,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 0
+							}
+						],
+						"cpus_num": 24,
+						"id": 1,
+						"memory_reserved": 0
+					}
+				]
+			},
+			"cpu_info": {
+				"vendor": "Intel",
+				"model": "Skylake-Server",
+				"arch": "x86_64",
+				"features": [
+					"pku",
+					"rtm",
+					"tsc_adjust",
+					"vme",
+					"pge",
+					"xsaveopt",
+					"smep",
+					"fpu",
+					"lm",
+					"tsc",
+					"adx",
+					"fxsr",
+					"tm",
+					"pclmuldq",
+					"xgetbv1",
+					"tsc-deadline",
+					"arat",
+					"de",
+					"aes",
+					"pse",
+					"sse",
+					"f16c",
+					"ds",
+					"mpx",
+					"avx512f",
+					"avx2",
+					"pbe",
+					"mbm_local",
+					"cx16",
+					"ds_cpl",
+					"movbe",
+					"cmt",
+					"vmx",
+					"sep",
+					"avx512dq",
+					"xsave",
+					"erms",
+					"hle",
+					"est",
+					"smx",
+					"abm",
+					"sse4.1",
+					"sse4.2",
+					"ssbd",
+					"acpi",
+					"popcnt",
+					"mmx",
+					"osxsave",
+					"clwb",
+					"dca",
+					"pdcm",
+					"invtsc",
+					"tm2",
+					"lahf_lm",
+					"pcid",
+					"rdrand",
+					"avx512vl",
+					"x2apic",
+					"smap",
+					"clflush",
+					"dtes64",
+					"xtpr",
+					"avx512bw",
+					"msr",
+					"fma",
+					"cx8",
+					"mce",
+					"avx512cd",
+					"mca",
+					"mbm_total",
+					"rdseed",
+					"apic",
+					"fsgsbase",
+					"rdtscp",
+					"ssse3",
+					"pse36",
+					"mtrr",
+					"avx",
+					"syscall",
+					"invpcid",
+					"cmov",
+					"spec-ctrl",
+					"clflushopt",
+					"pat",
+					"3dnowprefetch",
+					"nx",
+					"pae",
+					"ht",
+					"pdpe1gb",
+					"xsavec",
+					"pni",
+					"sse2",
+					"ss",
+					"bmi1",
+					"bmi2",
+					"xsaves"
+				]
+			},
+			"operation_status": "enabled",
+			"cRegion": "az1.dc12",
+			"bandwidths": []
+		},
+		{
+			"cAZ": "az1",
+			"cHAs": [],
+			"running_status": "UP",
+			"type": "host",
+			"hostname": "F972AB98-0A34-05B1-E811-B1A2B4230099",
+			"numa_topology": {
+				"cells": [
+					{
+						"memory_used": 19345,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								27,
+								3
+							],
+							[
+								28,
+								4
+							],
+							[
+								5,
+								29
+							],
+							[
+								30,
+								6
+							],
+							[
+								31,
+								7
+							],
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								35,
+								11
+							]
+						],
+						"cpuset": [
+							[
+								27,
+								3
+							],
+							[
+								28,
+								4
+							],
+							[
+								5,
+								29
+							],
+							[
+								30,
+								6
+							],
+							[
+								31,
+								7
+							],
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								35,
+								11
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 18,
+						"cpus_reserved_num": 0,
+						"memory": 194741,
+						"mempages": [
+							{
+								"total": 4502829,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 3903744
+							},
+							{
+								"total": 173,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 4
+							}
+						],
+						"cpus_num": 18,
+						"id": 0,
+						"memory_reserved": 0
+					},
+					{
+						"memory_used": 6033,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								36,
+								12
+							],
+							[
+								13,
+								37
+							],
+							[
+								38,
+								14
+							],
+							[
+								39,
+								15
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								43,
+								19
+							],
+							[
+								44,
+								20
+							],
+							[
+								21,
+								45
+							],
+							[
+								46,
+								22
+							],
+							[
+								47,
+								23
+							]
+						],
+						"cpuset": [
+							[
+								36,
+								12
+							],
+							[
+								13,
+								37
+							],
+							[
+								38,
+								14
+							],
+							[
+								39,
+								15
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								43,
+								19
+							],
+							[
+								44,
+								20
+							],
+							[
+								21,
+								45
+							],
+							[
+								46,
+								22
+							],
+							[
+								47,
+								23
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 24,
+						"cpus_reserved_num": 0,
+						"memory": 196608,
+						"mempages": [
+							{
+								"total": 4980736,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 1544448
+							},
+							{
+								"total": 173,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 0
+							}
+						],
+						"cpus_num": 24,
+						"id": 1,
+						"memory_reserved": 0
+					}
+				]
+			},
+			"cpu_info": {
+				"vendor": "Intel",
+				"model": "Skylake-Server",
+				"arch": "x86_64",
+				"features": [
+					"pku",
+					"rtm",
+					"tsc_adjust",
+					"vme",
+					"pge",
+					"xsaveopt",
+					"smep",
+					"fpu",
+					"lm",
+					"tsc",
+					"adx",
+					"fxsr",
+					"tm",
+					"pclmuldq",
+					"xgetbv1",
+					"tsc-deadline",
+					"arat",
+					"de",
+					"aes",
+					"pse",
+					"sse",
+					"f16c",
+					"ds",
+					"mpx",
+					"avx512f",
+					"avx2",
+					"pbe",
+					"mbm_local",
+					"cx16",
+					"ds_cpl",
+					"movbe",
+					"cmt",
+					"vmx",
+					"sep",
+					"avx512dq",
+					"xsave",
+					"erms",
+					"hle",
+					"est",
+					"smx",
+					"abm",
+					"sse4.1",
+					"sse4.2",
+					"ssbd",
+					"acpi",
+					"popcnt",
+					"mmx",
+					"osxsave",
+					"clwb",
+					"dca",
+					"pdcm",
+					"invtsc",
+					"tm2",
+					"lahf_lm",
+					"pcid",
+					"rdrand",
+					"avx512vl",
+					"x2apic",
+					"smap",
+					"clflush",
+					"dtes64",
+					"xtpr",
+					"avx512bw",
+					"msr",
+					"fma",
+					"cx8",
+					"mce",
+					"avx512cd",
+					"mca",
+					"mbm_total",
+					"rdseed",
+					"apic",
+					"fsgsbase",
+					"rdtscp",
+					"ssse3",
+					"pse36",
+					"mtrr",
+					"avx",
+					"syscall",
+					"invpcid",
+					"cmov",
+					"spec-ctrl",
+					"clflushopt",
+					"pat",
+					"3dnowprefetch",
+					"nx",
+					"pae",
+					"ht",
+					"pdpe1gb",
+					"xsavec",
+					"pni",
+					"sse2",
+					"ss",
+					"bmi1",
+					"bmi2",
+					"xsaves"
+				]
+			},
+			"operation_status": "enabled",
+			"cRegion": "az1.dc12",
+			"bandwidths": []
+		},
+		{
+			"cAZ": "az1",
+			"cHAs": [
+				{
+					"name": "test",
+					"metadatas": [
+						{
+							"value": "true",
+							"key": "CMCC",
+							"op": "="
+						},
+						{
+							"value": "az1.dc12",
+							"key": "availability_zone",
+							"op": "="
+						}
+					]
+				}
+			],
+			"running_status": "UP",
+			"type": "host",
+			"hostname": "067F3EC1-EFD0-51B2-E811-FC941886A54F",
+			"numa_topology": {
+				"cells": [
+					{
+						"memory_used": 19345,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								27,
+								3
+							],
+							[
+								28,
+								4
+							],
+							[
+								5,
+								29
+							],
+							[
+								30,
+								6
+							],
+							[
+								31,
+								7
+							],
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								35,
+								11
+							]
+						],
+						"cpuset": [
+							[
+								27,
+								3
+							],
+							[
+								28,
+								4
+							],
+							[
+								5,
+								29
+							],
+							[
+								30,
+								6
+							],
+							[
+								31,
+								7
+							],
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								35,
+								11
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 18,
+						"cpus_reserved_num": 0,
+						"memory": 194741,
+						"mempages": [
+							{
+								"total": 4502829,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 3903744
+							},
+							{
+								"total": 173,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 4
+							}
+						],
+						"cpus_num": 18,
+						"id": 0,
+						"memory_reserved": 0
+					},
+					{
+						"memory_used": 6033,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								36,
+								12
+							],
+							[
+								13,
+								37
+							],
+							[
+								38,
+								14
+							],
+							[
+								39,
+								15
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								43,
+								19
+							],
+							[
+								44,
+								20
+							],
+							[
+								21,
+								45
+							],
+							[
+								46,
+								22
+							],
+							[
+								47,
+								23
+							]
+						],
+						"cpuset": [
+							[
+								36,
+								12
+							],
+							[
+								13,
+								37
+							],
+							[
+								38,
+								14
+							],
+							[
+								39,
+								15
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								43,
+								19
+							],
+							[
+								44,
+								20
+							],
+							[
+								21,
+								45
+							],
+							[
+								46,
+								22
+							],
+							[
+								47,
+								23
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 24,
+						"cpus_reserved_num": 0,
+						"memory": 196608,
+						"mempages": [
+							{
+								"total": 4980736,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 1544448
+							},
+							{
+								"total": 173,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 0
+							}
+						],
+						"cpus_num": 24,
+						"id": 1,
+						"memory_reserved": 0
+					}
+				]
+			},
+			"cpu_info": {
+				"vendor": "Intel",
+				"model": "Skylake-Server",
+				"arch": "x86_64",
+				"features": [
+					"pku",
+					"rtm",
+					"tsc_adjust",
+					"vme",
+					"pge",
+					"xsaveopt",
+					"smep",
+					"fpu",
+					"lm",
+					"tsc",
+					"adx",
+					"fxsr",
+					"tm",
+					"pclmuldq",
+					"xgetbv1",
+					"tsc-deadline",
+					"arat",
+					"de",
+					"aes",
+					"pse",
+					"sse",
+					"f16c",
+					"ds",
+					"mpx",
+					"avx512f",
+					"avx2",
+					"pbe",
+					"mbm_local",
+					"cx16",
+					"ds_cpl",
+					"movbe",
+					"cmt",
+					"vmx",
+					"sep",
+					"avx512dq",
+					"xsave",
+					"erms",
+					"hle",
+					"est",
+					"smx",
+					"abm",
+					"sse4.1",
+					"sse4.2",
+					"ssbd",
+					"acpi",
+					"popcnt",
+					"mmx",
+					"osxsave",
+					"clwb",
+					"dca",
+					"pdcm",
+					"invtsc",
+					"tm2",
+					"lahf_lm",
+					"pcid",
+					"rdrand",
+					"avx512vl",
+					"x2apic",
+					"smap",
+					"clflush",
+					"dtes64",
+					"xtpr",
+					"avx512bw",
+					"msr",
+					"fma",
+					"cx8",
+					"mce",
+					"avx512cd",
+					"mca",
+					"mbm_total",
+					"rdseed",
+					"apic",
+					"fsgsbase",
+					"rdtscp",
+					"ssse3",
+					"pse36",
+					"mtrr",
+					"avx",
+					"syscall",
+					"invpcid",
+					"cmov",
+					"spec-ctrl",
+					"clflushopt",
+					"pat",
+					"3dnowprefetch",
+					"nx",
+					"pae",
+					"ht",
+					"pdpe1gb",
+					"xsavec",
+					"pni",
+					"sse2",
+					"ss",
+					"bmi1",
+					"bmi2",
+					"xsaves"
+				]
+			},
+			"operation_status": "enabled",
+			"cRegion": "az1.dc12",
+			"bandwidths": []
+		},
+		{
+			"cAZ": "az1",
+			"cHAs": [],
+			"running_status": "UP",
+			"type": "host",
+			"hostname": "9275AB98-0A34-E4B4-E811-B1A27699E076",
+			"numa_topology": {
+				"cells": [
+					{
+						"memory_used": 19150,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								3,
+								27
+							],
+							[
+								4,
+								28
+							],
+							[
+								5,
+								29
+							],
+							[
+								6,
+								30
+							],
+							[
+								7,
+								31
+							],
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								11,
+								35
+							]
+						],
+						"cpuset": [
+							[
+								3,
+								27
+							],
+							[
+								4,
+								28
+							],
+							[
+								5,
+								29
+							],
+							[
+								6,
+								30
+							],
+							[
+								7,
+								31
+							],
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								11,
+								35
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 18,
+						"cpus_reserved_num": 0,
+						"memory": 179125,
+						"mempages": [
+							{
+								"total": 4437293,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 3853824
+							},
+							{
+								"total": 158,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 4
+							}
+						],
+						"cpus_num": 18,
+						"id": 0,
+						"memory_reserved": 0
+					},
+					{
+						"memory_used": 5838,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								12,
+								36
+							],
+							[
+								13,
+								37
+							],
+							[
+								14,
+								38
+							],
+							[
+								15,
+								39
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								19,
+								43
+							],
+							[
+								20,
+								44
+							],
+							[
+								21,
+								45
+							],
+							[
+								22,
+								46
+							],
+							[
+								23,
+								47
+							]
+						],
+						"cpuset": [
+							[
+								12,
+								36
+							],
+							[
+								13,
+								37
+							],
+							[
+								14,
+								38
+							],
+							[
+								15,
+								39
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								19,
+								43
+							],
+							[
+								20,
+								44
+							],
+							[
+								21,
+								45
+							],
+							[
+								22,
+								46
+							],
+							[
+								23,
+								47
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 24,
+						"cpus_reserved_num": 0,
+						"memory": 196608,
+						"mempages": [
+							{
+								"total": 8912896,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 1494528
+							},
+							{
+								"total": 158,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 0
+							}
+						],
+						"cpus_num": 24,
+						"id": 1,
+						"memory_reserved": 0
+					}
+				]
+			},
+			"cpu_info": {
+				"vendor": "Intel",
+				"model": "Skylake-Server",
+				"arch": "x86_64",
+				"features": [
+					"pku",
+					"rtm",
+					"tsc_adjust",
+					"vme",
+					"pge",
+					"xsaveopt",
+					"smep",
+					"fpu",
+					"lm",
+					"tsc",
+					"adx",
+					"fxsr",
+					"tm",
+					"pclmuldq",
+					"xgetbv1",
+					"tsc-deadline",
+					"arat",
+					"de",
+					"aes",
+					"pse",
+					"sse",
+					"f16c",
+					"ds",
+					"mpx",
+					"avx512f",
+					"avx2",
+					"pbe",
+					"mbm_local",
+					"cx16",
+					"ds_cpl",
+					"movbe",
+					"cmt",
+					"vmx",
+					"sep",
+					"avx512dq",
+					"xsave",
+					"erms",
+					"hle",
+					"est",
+					"smx",
+					"abm",
+					"sse4.1",
+					"sse4.2",
+					"ssbd",
+					"acpi",
+					"popcnt",
+					"mmx",
+					"osxsave",
+					"clwb",
+					"dca",
+					"pdcm",
+					"invtsc",
+					"tm2",
+					"lahf_lm",
+					"pcid",
+					"rdrand",
+					"avx512vl",
+					"x2apic",
+					"smap",
+					"clflush",
+					"dtes64",
+					"xtpr",
+					"avx512bw",
+					"msr",
+					"fma",
+					"cx8",
+					"mce",
+					"avx512cd",
+					"mca",
+					"mbm_total",
+					"rdseed",
+					"apic",
+					"fsgsbase",
+					"rdtscp",
+					"ssse3",
+					"pse36",
+					"mtrr",
+					"avx",
+					"syscall",
+					"invpcid",
+					"cmov",
+					"spec-ctrl",
+					"clflushopt",
+					"pat",
+					"3dnowprefetch",
+					"nx",
+					"pae",
+					"ht",
+					"pdpe1gb",
+					"xsavec",
+					"pni",
+					"sse2",
+					"ss",
+					"bmi1",
+					"bmi2",
+					"xsaves"
+				]
+			},
+			"operation_status": "enabled",
+			"cRegion": "az1.dc12",
+			"bandwidths": []
+		},
+		{
+			"cAZ": "az1",
+			"cHAs": [],
+			"running_status": "UP",
+			"type": "host",
+			"hostname": "5074AB98-0A34-F08F-E811-B3A2409E3092",
+			"numa_topology": {
+				"cells": [
+					{
+						"memory_used": 19345,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								27,
+								3
+							],
+							[
+								28,
+								4
+							],
+							[
+								5,
+								29
+							],
+							[
+								30,
+								6
+							],
+							[
+								31,
+								7
+							],
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								35,
+								11
+							]
+						],
+						"cpuset": [
+							[
+								27,
+								3
+							],
+							[
+								28,
+								4
+							],
+							[
+								5,
+								29
+							],
+							[
+								30,
+								6
+							],
+							[
+								31,
+								7
+							],
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								35,
+								11
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 18,
+						"cpus_reserved_num": 0,
+						"memory": 194741,
+						"mempages": [
+							{
+								"total": 4502829,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 3903744
+							},
+							{
+								"total": 173,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 4
+							}
+						],
+						"cpus_num": 18,
+						"id": 0,
+						"memory_reserved": 0
+					},
+					{
+						"memory_used": 6033,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								36,
+								12
+							],
+							[
+								13,
+								37
+							],
+							[
+								38,
+								14
+							],
+							[
+								39,
+								15
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								43,
+								19
+							],
+							[
+								44,
+								20
+							],
+							[
+								21,
+								45
+							],
+							[
+								46,
+								22
+							],
+							[
+								47,
+								23
+							]
+						],
+						"cpuset": [
+							[
+								36,
+								12
+							],
+							[
+								13,
+								37
+							],
+							[
+								38,
+								14
+							],
+							[
+								39,
+								15
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								43,
+								19
+							],
+							[
+								44,
+								20
+							],
+							[
+								21,
+								45
+							],
+							[
+								46,
+								22
+							],
+							[
+								47,
+								23
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 24,
+						"cpus_reserved_num": 0,
+						"memory": 196608,
+						"mempages": [
+							{
+								"total": 4980736,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 1544448
+							},
+							{
+								"total": 173,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 0
+							}
+						],
+						"cpus_num": 24,
+						"id": 1,
+						"memory_reserved": 0
+					}
+				]
+			},
+			"cpu_info": {
+				"vendor": "Intel",
+				"model": "Skylake-Server",
+				"arch": "x86_64",
+				"features": [
+					"pku",
+					"rtm",
+					"tsc_adjust",
+					"vme",
+					"pge",
+					"xsaveopt",
+					"smep",
+					"fpu",
+					"lm",
+					"tsc",
+					"adx",
+					"fxsr",
+					"tm",
+					"pclmuldq",
+					"xgetbv1",
+					"tsc-deadline",
+					"arat",
+					"de",
+					"aes",
+					"pse",
+					"sse",
+					"f16c",
+					"ds",
+					"mpx",
+					"avx512f",
+					"avx2",
+					"pbe",
+					"mbm_local",
+					"cx16",
+					"ds_cpl",
+					"movbe",
+					"cmt",
+					"vmx",
+					"sep",
+					"avx512dq",
+					"xsave",
+					"erms",
+					"hle",
+					"est",
+					"smx",
+					"abm",
+					"sse4.1",
+					"sse4.2",
+					"ssbd",
+					"acpi",
+					"popcnt",
+					"mmx",
+					"osxsave",
+					"clwb",
+					"dca",
+					"pdcm",
+					"invtsc",
+					"tm2",
+					"lahf_lm",
+					"pcid",
+					"rdrand",
+					"avx512vl",
+					"x2apic",
+					"smap",
+					"clflush",
+					"dtes64",
+					"xtpr",
+					"avx512bw",
+					"msr",
+					"fma",
+					"cx8",
+					"mce",
+					"avx512cd",
+					"mca",
+					"mbm_total",
+					"rdseed",
+					"apic",
+					"fsgsbase",
+					"rdtscp",
+					"ssse3",
+					"pse36",
+					"mtrr",
+					"avx",
+					"syscall",
+					"invpcid",
+					"cmov",
+					"spec-ctrl",
+					"clflushopt",
+					"pat",
+					"3dnowprefetch",
+					"nx",
+					"pae",
+					"ht",
+					"pdpe1gb",
+					"xsavec",
+					"pni",
+					"sse2",
+					"ss",
+					"bmi1",
+					"bmi2",
+					"xsaves"
+				]
+			},
+			"operation_status": "enabled",
+			"cRegion": "az1.dc12",
+			"bandwidths": []
+		},
+		{
+			"cAZ": "az1",
+			"cHAs": [
+				{
+					"name": "Srv_GRP",
+					"metadatas": [
+						{
+							"value": "true",
+							"key": "Srv_GRP",
+							"op": "="
+						},
+						{
+							"value": "az1.dc12",
+							"key": "availability_zone",
+							"op": "="
+						}
+					]
+				}
+			],
+			"running_status": "UP",
+			"type": "host",
+			"hostname": "0773AB98-0A34-31B0-E811-ABA25A62F3B2",
+			"numa_topology": {
+				"cells": [
+					{
+						"memory_used": 19345,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								3,
+								27
+							],
+							[
+								4,
+								28
+							],
+							[
+								5,
+								29
+							],
+							[
+								6,
+								30
+							],
+							[
+								7,
+								31
+							],
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								11,
+								35
+							]
+						],
+						"cpuset": [
+							[
+								3,
+								27
+							],
+							[
+								4,
+								28
+							],
+							[
+								5,
+								29
+							],
+							[
+								6,
+								30
+							],
+							[
+								7,
+								31
+							],
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								11,
+								35
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 18,
+						"cpus_reserved_num": 0,
+						"memory": 194741,
+						"mempages": [
+							{
+								"total": 4502829,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 3903744
+							},
+							{
+								"total": 173,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 4
+							}
+						],
+						"cpus_num": 18,
+						"id": 0,
+						"memory_reserved": 0
+					},
+					{
+						"memory_used": 18321,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [
+							[
+								12,
+								36
+							],
+							[
+								13,
+								37
+							],
+							[
+								14,
+								38
+							]
+						],
+						"cpus_pinned_num": 6,
+						"unpinned_cpus": [
+							[
+								15,
+								39
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								19,
+								43
+							],
+							[
+								20,
+								44
+							],
+							[
+								21,
+								45
+							],
+							[
+								22,
+								46
+							],
+							[
+								23,
+								47
+							]
+						],
+						"cpuset": [
+							[
+								12,
+								36
+							],
+							[
+								13,
+								37
+							],
+							[
+								14,
+								38
+							],
+							[
+								15,
+								39
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								19,
+								43
+							],
+							[
+								20,
+								44
+							],
+							[
+								21,
+								45
+							],
+							[
+								22,
+								46
+							],
+							[
+								23,
+								47
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 18,
+						"cpus_reserved_num": 6,
+						"memory": 196608,
+						"mempages": [
+							{
+								"total": 4980736,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 1544448
+							},
+							{
+								"total": 173,
+								"reserved": 12,
+								"size_kb": 1048576,
+								"used": 12
+							}
+						],
+						"cpus_num": 24,
+						"id": 1,
+						"memory_reserved": 12288
+					}
+				]
+			},
+			"cpu_info": {
+				"vendor": "Intel",
+				"model": "Skylake-Server",
+				"arch": "x86_64",
+				"features": [
+					"pku",
+					"rtm",
+					"tsc_adjust",
+					"vme",
+					"pge",
+					"xsaveopt",
+					"smep",
+					"fpu",
+					"lm",
+					"tsc",
+					"adx",
+					"fxsr",
+					"tm",
+					"pclmuldq",
+					"xgetbv1",
+					"tsc-deadline",
+					"arat",
+					"de",
+					"aes",
+					"pse",
+					"sse",
+					"f16c",
+					"ds",
+					"mpx",
+					"avx512f",
+					"avx2",
+					"pbe",
+					"mbm_local",
+					"cx16",
+					"ds_cpl",
+					"movbe",
+					"cmt",
+					"vmx",
+					"sep",
+					"avx512dq",
+					"xsave",
+					"erms",
+					"hle",
+					"est",
+					"smx",
+					"abm",
+					"sse4.1",
+					"sse4.2",
+					"ssbd",
+					"acpi",
+					"popcnt",
+					"mmx",
+					"osxsave",
+					"clwb",
+					"dca",
+					"pdcm",
+					"invtsc",
+					"tm2",
+					"lahf_lm",
+					"pcid",
+					"rdrand",
+					"avx512vl",
+					"x2apic",
+					"smap",
+					"clflush",
+					"dtes64",
+					"xtpr",
+					"avx512bw",
+					"msr",
+					"fma",
+					"cx8",
+					"mce",
+					"avx512cd",
+					"mca",
+					"mbm_total",
+					"rdseed",
+					"apic",
+					"fsgsbase",
+					"rdtscp",
+					"ssse3",
+					"pse36",
+					"mtrr",
+					"avx",
+					"syscall",
+					"invpcid",
+					"cmov",
+					"spec-ctrl",
+					"clflushopt",
+					"pat",
+					"3dnowprefetch",
+					"nx",
+					"pae",
+					"ht",
+					"pdpe1gb",
+					"xsavec",
+					"pni",
+					"sse2",
+					"ss",
+					"bmi1",
+					"bmi2",
+					"xsaves"
+				]
+			},
+			"operation_status": "enabled",
+			"cRegion": "az1.dc12",
+			"bandwidths": []
+		},
+		{
+			"cAZ": "az1",
+			"cHAs": [],
+			"running_status": "UP",
+			"type": "host",
+			"hostname": "9975AB98-0A34-BBA7-E811-B1A256E20E93",
+			"numa_topology": {
+				"cells": [
+					{
+						"memory_used": 19345,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								3,
+								27
+							],
+							[
+								4,
+								28
+							],
+							[
+								5,
+								29
+							],
+							[
+								6,
+								30
+							],
+							[
+								7,
+								31
+							],
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								11,
+								35
+							]
+						],
+						"cpuset": [
+							[
+								3,
+								27
+							],
+							[
+								4,
+								28
+							],
+							[
+								5,
+								29
+							],
+							[
+								6,
+								30
+							],
+							[
+								7,
+								31
+							],
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								11,
+								35
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 18,
+						"cpus_reserved_num": 0,
+						"memory": 194741,
+						"mempages": [
+							{
+								"total": 4502829,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 3903744
+							},
+							{
+								"total": 173,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 4
+							}
+						],
+						"cpus_num": 18,
+						"id": 0,
+						"memory_reserved": 0
+					},
+					{
+						"memory_used": 6033,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								12,
+								36
+							],
+							[
+								13,
+								37
+							],
+							[
+								14,
+								38
+							],
+							[
+								15,
+								39
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								19,
+								43
+							],
+							[
+								20,
+								44
+							],
+							[
+								21,
+								45
+							],
+							[
+								22,
+								46
+							],
+							[
+								23,
+								47
+							]
+						],
+						"cpuset": [
+							[
+								12,
+								36
+							],
+							[
+								13,
+								37
+							],
+							[
+								14,
+								38
+							],
+							[
+								15,
+								39
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								19,
+								43
+							],
+							[
+								20,
+								44
+							],
+							[
+								21,
+								45
+							],
+							[
+								22,
+								46
+							],
+							[
+								23,
+								47
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 24,
+						"cpus_reserved_num": 0,
+						"memory": 196608,
+						"mempages": [
+							{
+								"total": 4980736,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 1544448
+							},
+							{
+								"total": 173,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 0
+							}
+						],
+						"cpus_num": 24,
+						"id": 1,
+						"memory_reserved": 0
+					}
+				]
+			},
+			"cpu_info": {
+				"vendor": "Intel",
+				"model": "Skylake-Server",
+				"arch": "x86_64",
+				"features": [
+					"pku",
+					"rtm",
+					"tsc_adjust",
+					"vme",
+					"pge",
+					"xsaveopt",
+					"smep",
+					"fpu",
+					"lm",
+					"tsc",
+					"adx",
+					"fxsr",
+					"tm",
+					"pclmuldq",
+					"xgetbv1",
+					"tsc-deadline",
+					"arat",
+					"de",
+					"aes",
+					"pse",
+					"sse",
+					"f16c",
+					"ds",
+					"mpx",
+					"avx512f",
+					"avx2",
+					"pbe",
+					"mbm_local",
+					"cx16",
+					"ds_cpl",
+					"movbe",
+					"cmt",
+					"vmx",
+					"sep",
+					"avx512dq",
+					"xsave",
+					"erms",
+					"hle",
+					"est",
+					"smx",
+					"abm",
+					"sse4.1",
+					"sse4.2",
+					"ssbd",
+					"acpi",
+					"popcnt",
+					"mmx",
+					"osxsave",
+					"clwb",
+					"dca",
+					"pdcm",
+					"invtsc",
+					"tm2",
+					"lahf_lm",
+					"pcid",
+					"rdrand",
+					"avx512vl",
+					"x2apic",
+					"smap",
+					"clflush",
+					"dtes64",
+					"xtpr",
+					"avx512bw",
+					"msr",
+					"fma",
+					"cx8",
+					"mce",
+					"avx512cd",
+					"mca",
+					"mbm_total",
+					"rdseed",
+					"apic",
+					"fsgsbase",
+					"rdtscp",
+					"ssse3",
+					"pse36",
+					"mtrr",
+					"avx",
+					"syscall",
+					"invpcid",
+					"cmov",
+					"spec-ctrl",
+					"clflushopt",
+					"pat",
+					"3dnowprefetch",
+					"nx",
+					"pae",
+					"ht",
+					"pdpe1gb",
+					"xsavec",
+					"pni",
+					"sse2",
+					"ss",
+					"bmi1",
+					"bmi2",
+					"xsaves"
+				]
+			},
+			"operation_status": "enabled",
+			"cRegion": "az1.dc12",
+			"bandwidths": []
+		},
+		{
+			"cAZ": "az1",
+			"cHAs": [],
+			"running_status": "UP",
+			"type": "host",
+			"hostname": "5F46ECC1-EFD0-B296-E811-869F76A038D7",
+			"numa_topology": {
+				"cells": [
+					{
+						"memory_used": 19345,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								3,
+								27
+							],
+							[
+								4,
+								28
+							],
+							[
+								5,
+								29
+							],
+							[
+								6,
+								30
+							],
+							[
+								7,
+								31
+							],
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								11,
+								35
+							]
+						],
+						"cpuset": [
+							[
+								3,
+								27
+							],
+							[
+								4,
+								28
+							],
+							[
+								5,
+								29
+							],
+							[
+								6,
+								30
+							],
+							[
+								7,
+								31
+							],
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								11,
+								35
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 18,
+						"cpus_reserved_num": 0,
+						"memory": 194741,
+						"mempages": [
+							{
+								"total": 4502829,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 3903744
+							},
+							{
+								"total": 173,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 4
+							}
+						],
+						"cpus_num": 18,
+						"id": 0,
+						"memory_reserved": 0
+					},
+					{
+						"memory_used": 6033,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								12,
+								36
+							],
+							[
+								13,
+								37
+							],
+							[
+								14,
+								38
+							],
+							[
+								15,
+								39
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								19,
+								43
+							],
+							[
+								20,
+								44
+							],
+							[
+								21,
+								45
+							],
+							[
+								22,
+								46
+							],
+							[
+								23,
+								47
+							]
+						],
+						"cpuset": [
+							[
+								12,
+								36
+							],
+							[
+								13,
+								37
+							],
+							[
+								14,
+								38
+							],
+							[
+								15,
+								39
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								19,
+								43
+							],
+							[
+								20,
+								44
+							],
+							[
+								21,
+								45
+							],
+							[
+								22,
+								46
+							],
+							[
+								23,
+								47
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 24,
+						"cpus_reserved_num": 0,
+						"memory": 196608,
+						"mempages": [
+							{
+								"total": 4980736,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 1544448
+							},
+							{
+								"total": 173,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 0
+							}
+						],
+						"cpus_num": 24,
+						"id": 1,
+						"memory_reserved": 0
+					}
+				]
+			},
+			"cpu_info": {
+				"vendor": "Intel",
+				"model": "Skylake-Server",
+				"arch": "x86_64",
+				"features": [
+					"pku",
+					"rtm",
+					"tsc_adjust",
+					"vme",
+					"pge",
+					"xsaveopt",
+					"smep",
+					"fpu",
+					"lm",
+					"tsc",
+					"adx",
+					"fxsr",
+					"tm",
+					"pclmuldq",
+					"xgetbv1",
+					"tsc-deadline",
+					"arat",
+					"de",
+					"aes",
+					"pse",
+					"sse",
+					"f16c",
+					"ds",
+					"mpx",
+					"avx512f",
+					"avx2",
+					"pbe",
+					"mbm_local",
+					"cx16",
+					"ds_cpl",
+					"movbe",
+					"cmt",
+					"vmx",
+					"sep",
+					"avx512dq",
+					"xsave",
+					"erms",
+					"hle",
+					"est",
+					"smx",
+					"abm",
+					"sse4.1",
+					"sse4.2",
+					"ssbd",
+					"acpi",
+					"popcnt",
+					"mmx",
+					"osxsave",
+					"clwb",
+					"dca",
+					"pdcm",
+					"invtsc",
+					"tm2",
+					"lahf_lm",
+					"pcid",
+					"rdrand",
+					"avx512vl",
+					"x2apic",
+					"smap",
+					"clflush",
+					"dtes64",
+					"xtpr",
+					"avx512bw",
+					"msr",
+					"fma",
+					"cx8",
+					"mce",
+					"avx512cd",
+					"mca",
+					"mbm_total",
+					"rdseed",
+					"apic",
+					"fsgsbase",
+					"rdtscp",
+					"ssse3",
+					"pse36",
+					"mtrr",
+					"avx",
+					"syscall",
+					"invpcid",
+					"cmov",
+					"spec-ctrl",
+					"clflushopt",
+					"pat",
+					"3dnowprefetch",
+					"nx",
+					"pae",
+					"ht",
+					"pdpe1gb",
+					"xsavec",
+					"pni",
+					"sse2",
+					"ss",
+					"bmi1",
+					"bmi2",
+					"xsaves"
+				]
+			},
+			"operation_status": "enabled",
+			"cRegion": "az1.dc12",
+			"bandwidths": []
+		},
+		{
+			"cAZ": "az1",
+			"cHAs": [],
+			"running_status": "UP",
+			"type": "host",
+			"hostname": "EB72AB98-0A34-8DBC-E811-ACA21C40BDCA",
+			"numa_topology": {
+				"cells": [
+					{
+						"memory_used": 19150,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								3,
+								27
+							],
+							[
+								4,
+								28
+							],
+							[
+								5,
+								29
+							],
+							[
+								6,
+								30
+							],
+							[
+								7,
+								31
+							],
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								11,
+								35
+							]
+						],
+						"cpuset": [
+							[
+								3,
+								27
+							],
+							[
+								4,
+								28
+							],
+							[
+								5,
+								29
+							],
+							[
+								6,
+								30
+							],
+							[
+								7,
+								31
+							],
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								11,
+								35
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 18,
+						"cpus_reserved_num": 0,
+						"memory": 195509,
+						"mempages": [
+							{
+								"total": 6010157,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 3853824
+							},
+							{
+								"total": 168,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 4
+							}
+						],
+						"cpus_num": 18,
+						"id": 0,
+						"memory_reserved": 0
+					},
+					{
+						"memory_used": 5838,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								12,
+								36
+							],
+							[
+								13,
+								37
+							],
+							[
+								14,
+								38
+							],
+							[
+								15,
+								39
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								19,
+								43
+							],
+							[
+								20,
+								44
+							],
+							[
+								21,
+								45
+							],
+							[
+								22,
+								46
+							],
+							[
+								23,
+								47
+							]
+						],
+						"cpuset": [
+							[
+								12,
+								36
+							],
+							[
+								13,
+								37
+							],
+							[
+								14,
+								38
+							],
+							[
+								15,
+								39
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								19,
+								43
+							],
+							[
+								20,
+								44
+							],
+							[
+								21,
+								45
+							],
+							[
+								22,
+								46
+							],
+							[
+								23,
+								47
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 24,
+						"cpus_reserved_num": 0,
+						"memory": 180224,
+						"mempages": [
+							{
+								"total": 2097152,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 1494528
+							},
+							{
+								"total": 168,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 0
+							}
+						],
+						"cpus_num": 24,
+						"id": 1,
+						"memory_reserved": 0
+					}
+				]
+			},
+			"cpu_info": {
+				"vendor": "Intel",
+				"model": "Skylake-Server",
+				"arch": "x86_64",
+				"features": [
+					"pku",
+					"rtm",
+					"tsc_adjust",
+					"vme",
+					"pge",
+					"xsaveopt",
+					"smep",
+					"fpu",
+					"lm",
+					"tsc",
+					"adx",
+					"fxsr",
+					"tm",
+					"pclmuldq",
+					"xgetbv1",
+					"tsc-deadline",
+					"arat",
+					"de",
+					"aes",
+					"pse",
+					"sse",
+					"f16c",
+					"ds",
+					"mpx",
+					"avx512f",
+					"avx2",
+					"pbe",
+					"mbm_local",
+					"cx16",
+					"ds_cpl",
+					"movbe",
+					"cmt",
+					"vmx",
+					"sep",
+					"avx512dq",
+					"xsave",
+					"erms",
+					"hle",
+					"est",
+					"smx",
+					"abm",
+					"sse4.1",
+					"sse4.2",
+					"ssbd",
+					"acpi",
+					"popcnt",
+					"mmx",
+					"osxsave",
+					"clwb",
+					"dca",
+					"pdcm",
+					"invtsc",
+					"tm2",
+					"lahf_lm",
+					"pcid",
+					"rdrand",
+					"avx512vl",
+					"x2apic",
+					"smap",
+					"clflush",
+					"dtes64",
+					"xtpr",
+					"avx512bw",
+					"msr",
+					"fma",
+					"cx8",
+					"mce",
+					"avx512cd",
+					"mca",
+					"mbm_total",
+					"rdseed",
+					"apic",
+					"fsgsbase",
+					"rdtscp",
+					"ssse3",
+					"pse36",
+					"mtrr",
+					"avx",
+					"syscall",
+					"invpcid",
+					"cmov",
+					"spec-ctrl",
+					"clflushopt",
+					"pat",
+					"3dnowprefetch",
+					"nx",
+					"pae",
+					"ht",
+					"pdpe1gb",
+					"xsavec",
+					"pni",
+					"sse2",
+					"ss",
+					"bmi1",
+					"bmi2",
+					"xsaves"
+				]
+			},
+			"operation_status": "enabled",
+			"cRegion": "az1.dc12",
+			"bandwidths": []
+		},
+		{
+			"cAZ": "az1",
+			"cHAs": [],
+			"running_status": "UP",
+			"type": "host",
+			"hostname": "FA4BECC1-EFD0-988F-E811-9B9FAEDCE4A1",
+			"numa_topology": {
+				"cells": [
+					{
+						"memory_used": 19345,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								27,
+								3
+							],
+							[
+								28,
+								4
+							],
+							[
+								5,
+								29
+							],
+							[
+								30,
+								6
+							],
+							[
+								31,
+								7
+							],
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								35,
+								11
+							]
+						],
+						"cpuset": [
+							[
+								27,
+								3
+							],
+							[
+								28,
+								4
+							],
+							[
+								5,
+								29
+							],
+							[
+								30,
+								6
+							],
+							[
+								31,
+								7
+							],
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								35,
+								11
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 18,
+						"cpus_reserved_num": 0,
+						"memory": 194741,
+						"mempages": [
+							{
+								"total": 4502829,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 3903744
+							},
+							{
+								"total": 173,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 4
+							}
+						],
+						"cpus_num": 18,
+						"id": 0,
+						"memory_reserved": 0
+					},
+					{
+						"memory_used": 6033,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								36,
+								12
+							],
+							[
+								13,
+								37
+							],
+							[
+								38,
+								14
+							],
+							[
+								39,
+								15
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								43,
+								19
+							],
+							[
+								44,
+								20
+							],
+							[
+								21,
+								45
+							],
+							[
+								46,
+								22
+							],
+							[
+								47,
+								23
+							]
+						],
+						"cpuset": [
+							[
+								36,
+								12
+							],
+							[
+								13,
+								37
+							],
+							[
+								38,
+								14
+							],
+							[
+								39,
+								15
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								43,
+								19
+							],
+							[
+								44,
+								20
+							],
+							[
+								21,
+								45
+							],
+							[
+								46,
+								22
+							],
+							[
+								47,
+								23
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 24,
+						"cpus_reserved_num": 0,
+						"memory": 196608,
+						"mempages": [
+							{
+								"total": 4980736,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 1544448
+							},
+							{
+								"total": 173,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 0
+							}
+						],
+						"cpus_num": 24,
+						"id": 1,
+						"memory_reserved": 0
+					}
+				]
+			},
+			"cpu_info": {
+				"vendor": "Intel",
+				"model": "Skylake-Server",
+				"arch": "x86_64",
+				"features": [
+					"pku",
+					"rtm",
+					"tsc_adjust",
+					"vme",
+					"pge",
+					"xsaveopt",
+					"smep",
+					"fpu",
+					"lm",
+					"tsc",
+					"adx",
+					"fxsr",
+					"tm",
+					"pclmuldq",
+					"xgetbv1",
+					"tsc-deadline",
+					"arat",
+					"de",
+					"aes",
+					"pse",
+					"sse",
+					"f16c",
+					"ds",
+					"mpx",
+					"avx512f",
+					"avx2",
+					"pbe",
+					"mbm_local",
+					"cx16",
+					"ds_cpl",
+					"movbe",
+					"cmt",
+					"vmx",
+					"sep",
+					"avx512dq",
+					"xsave",
+					"erms",
+					"hle",
+					"est",
+					"smx",
+					"abm",
+					"sse4.1",
+					"sse4.2",
+					"ssbd",
+					"acpi",
+					"popcnt",
+					"mmx",
+					"osxsave",
+					"clwb",
+					"dca",
+					"pdcm",
+					"invtsc",
+					"tm2",
+					"lahf_lm",
+					"pcid",
+					"rdrand",
+					"avx512vl",
+					"x2apic",
+					"smap",
+					"clflush",
+					"dtes64",
+					"xtpr",
+					"avx512bw",
+					"msr",
+					"fma",
+					"cx8",
+					"mce",
+					"avx512cd",
+					"mca",
+					"mbm_total",
+					"rdseed",
+					"apic",
+					"fsgsbase",
+					"rdtscp",
+					"ssse3",
+					"pse36",
+					"mtrr",
+					"avx",
+					"syscall",
+					"invpcid",
+					"cmov",
+					"spec-ctrl",
+					"clflushopt",
+					"pat",
+					"3dnowprefetch",
+					"nx",
+					"pae",
+					"ht",
+					"pdpe1gb",
+					"xsavec",
+					"pni",
+					"sse2",
+					"ss",
+					"bmi1",
+					"bmi2",
+					"xsaves"
+				]
+			},
+			"operation_status": "enabled",
+			"cRegion": "az1.dc12",
+			"bandwidths": []
+		},
+		{
+			"cAZ": "az1",
+			"cHAs": [
+				{
+					"name": "cailing",
+					"metadatas": [
+						{
+							"value": "true",
+							"key": "cailing",
+							"op": "="
+						},
+						{
+							"value": "az1.dc12",
+							"key": "availability_zone",
+							"op": "="
+						}
+					]
+				}
+			],
+			"running_status": "UP",
+			"type": "host",
+			"hostname": "D2E0FFC1-EFD0-D79F-E811-869FCE02F9CA",
+			"numa_topology": {
+				"cells": [
+					{
+						"memory_used": 18942,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								3,
+								27
+							],
+							[
+								4,
+								28
+							],
+							[
+								5,
+								29
+							],
+							[
+								6,
+								30
+							],
+							[
+								7,
+								31
+							],
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								11,
+								35
+							]
+						],
+						"cpuset": [
+							[
+								3,
+								27
+							],
+							[
+								4,
+								28
+							],
+							[
+								5,
+								29
+							],
+							[
+								6,
+								30
+							],
+							[
+								7,
+								31
+							],
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								11,
+								35
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 18,
+						"cpus_reserved_num": 0,
+						"memory": 195509,
+						"mempages": [
+							{
+								"total": 10204461,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 3800576
+							},
+							{
+								"total": 152,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 4
+							}
+						],
+						"cpus_num": 18,
+						"id": 0,
+						"memory_reserved": 0
+					},
+					{
+						"memory_used": 5630,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								12,
+								36
+							],
+							[
+								13,
+								37
+							],
+							[
+								14,
+								38
+							],
+							[
+								15,
+								39
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								19,
+								43
+							],
+							[
+								20,
+								44
+							],
+							[
+								21,
+								45
+							],
+							[
+								22,
+								46
+							],
+							[
+								23,
+								47
+							]
+						],
+						"cpuset": [
+							[
+								12,
+								36
+							],
+							[
+								13,
+								37
+							],
+							[
+								14,
+								38
+							],
+							[
+								15,
+								39
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								19,
+								43
+							],
+							[
+								20,
+								44
+							],
+							[
+								21,
+								45
+							],
+							[
+								22,
+								46
+							],
+							[
+								23,
+								47
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 24,
+						"cpus_reserved_num": 0,
+						"memory": 163840,
+						"mempages": [
+							{
+								"total": 2097152,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 1441280
+							},
+							{
+								"total": 152,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 0
+							}
+						],
+						"cpus_num": 24,
+						"id": 1,
+						"memory_reserved": 0
+					}
+				]
+			},
+			"cpu_info": {
+				"vendor": "Intel",
+				"model": "Skylake-Server",
+				"arch": "x86_64",
+				"features": [
+					"pku",
+					"rtm",
+					"tsc_adjust",
+					"vme",
+					"pge",
+					"xsaveopt",
+					"smep",
+					"fpu",
+					"lm",
+					"tsc",
+					"adx",
+					"fxsr",
+					"tm",
+					"pclmuldq",
+					"xgetbv1",
+					"tsc-deadline",
+					"arat",
+					"de",
+					"aes",
+					"pse",
+					"sse",
+					"f16c",
+					"ds",
+					"mpx",
+					"avx512f",
+					"avx2",
+					"pbe",
+					"mbm_local",
+					"cx16",
+					"ds_cpl",
+					"movbe",
+					"cmt",
+					"vmx",
+					"sep",
+					"avx512dq",
+					"xsave",
+					"erms",
+					"hle",
+					"est",
+					"smx",
+					"abm",
+					"sse4.1",
+					"sse4.2",
+					"ssbd",
+					"acpi",
+					"popcnt",
+					"mmx",
+					"osxsave",
+					"clwb",
+					"dca",
+					"pdcm",
+					"invtsc",
+					"tm2",
+					"lahf_lm",
+					"pcid",
+					"rdrand",
+					"avx512vl",
+					"x2apic",
+					"smap",
+					"clflush",
+					"dtes64",
+					"xtpr",
+					"avx512bw",
+					"msr",
+					"fma",
+					"cx8",
+					"mce",
+					"avx512cd",
+					"mca",
+					"mbm_total",
+					"rdseed",
+					"apic",
+					"fsgsbase",
+					"rdtscp",
+					"ssse3",
+					"pse36",
+					"mtrr",
+					"avx",
+					"syscall",
+					"invpcid",
+					"cmov",
+					"spec-ctrl",
+					"clflushopt",
+					"pat",
+					"3dnowprefetch",
+					"nx",
+					"pae",
+					"ht",
+					"pdpe1gb",
+					"xsavec",
+					"pni",
+					"sse2",
+					"ss",
+					"bmi1",
+					"bmi2",
+					"xsaves"
+				]
+			},
+			"operation_status": "enabled",
+			"cRegion": "az1.dc12",
+			"bandwidths": []
+		},
+		{
+			"cAZ": "az1",
+			"cHAs": [
+				{
+					"name": "cailing",
+					"metadatas": [
+						{
+							"value": "true",
+							"key": "cailing",
+							"op": "="
+						},
+						{
+							"value": "az1.dc12",
+							"key": "availability_zone",
+							"op": "="
+						}
+					]
+				}
+			],
+			"running_status": "UP",
+			"type": "host",
+			"hostname": "F488FFC1-EFD0-5998-E811-BE9A4E097757",
+			"numa_topology": {
+				"cells": [
+					{
+						"memory_used": 19345,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								3,
+								27
+							],
+							[
+								4,
+								28
+							],
+							[
+								5,
+								29
+							],
+							[
+								6,
+								30
+							],
+							[
+								7,
+								31
+							],
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								11,
+								35
+							]
+						],
+						"cpuset": [
+							[
+								3,
+								27
+							],
+							[
+								4,
+								28
+							],
+							[
+								5,
+								29
+							],
+							[
+								6,
+								30
+							],
+							[
+								7,
+								31
+							],
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								11,
+								35
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 18,
+						"cpus_reserved_num": 0,
+						"memory": 194741,
+						"mempages": [
+							{
+								"total": 4502829,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 3903744
+							},
+							{
+								"total": 173,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 4
+							}
+						],
+						"cpus_num": 18,
+						"id": 0,
+						"memory_reserved": 0
+					},
+					{
+						"memory_used": 6033,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								12,
+								36
+							],
+							[
+								13,
+								37
+							],
+							[
+								14,
+								38
+							],
+							[
+								15,
+								39
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								19,
+								43
+							],
+							[
+								20,
+								44
+							],
+							[
+								21,
+								45
+							],
+							[
+								22,
+								46
+							],
+							[
+								23,
+								47
+							]
+						],
+						"cpuset": [
+							[
+								12,
+								36
+							],
+							[
+								13,
+								37
+							],
+							[
+								14,
+								38
+							],
+							[
+								15,
+								39
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								19,
+								43
+							],
+							[
+								20,
+								44
+							],
+							[
+								21,
+								45
+							],
+							[
+								22,
+								46
+							],
+							[
+								23,
+								47
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 24,
+						"cpus_reserved_num": 0,
+						"memory": 196608,
+						"mempages": [
+							{
+								"total": 4980736,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 1544448
+							},
+							{
+								"total": 173,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 0
+							}
+						],
+						"cpus_num": 24,
+						"id": 1,
+						"memory_reserved": 0
+					}
+				]
+			},
+			"cpu_info": {
+				"vendor": "Intel",
+				"model": "Skylake-Server",
+				"arch": "x86_64",
+				"features": [
+					"pku",
+					"rtm",
+					"tsc_adjust",
+					"vme",
+					"pge",
+					"xsaveopt",
+					"smep",
+					"fpu",
+					"lm",
+					"tsc",
+					"adx",
+					"fxsr",
+					"tm",
+					"pclmuldq",
+					"xgetbv1",
+					"tsc-deadline",
+					"arat",
+					"de",
+					"aes",
+					"pse",
+					"sse",
+					"f16c",
+					"ds",
+					"mpx",
+					"avx512f",
+					"avx2",
+					"pbe",
+					"mbm_local",
+					"cx16",
+					"ds_cpl",
+					"movbe",
+					"cmt",
+					"vmx",
+					"sep",
+					"avx512dq",
+					"xsave",
+					"erms",
+					"hle",
+					"est",
+					"smx",
+					"abm",
+					"sse4.1",
+					"sse4.2",
+					"ssbd",
+					"acpi",
+					"popcnt",
+					"mmx",
+					"osxsave",
+					"clwb",
+					"dca",
+					"pdcm",
+					"invtsc",
+					"tm2",
+					"lahf_lm",
+					"pcid",
+					"rdrand",
+					"avx512vl",
+					"x2apic",
+					"smap",
+					"clflush",
+					"dtes64",
+					"xtpr",
+					"avx512bw",
+					"msr",
+					"fma",
+					"cx8",
+					"mce",
+					"avx512cd",
+					"mca",
+					"mbm_total",
+					"rdseed",
+					"apic",
+					"fsgsbase",
+					"rdtscp",
+					"ssse3",
+					"pse36",
+					"mtrr",
+					"avx",
+					"syscall",
+					"invpcid",
+					"cmov",
+					"spec-ctrl",
+					"clflushopt",
+					"pat",
+					"3dnowprefetch",
+					"nx",
+					"pae",
+					"ht",
+					"pdpe1gb",
+					"xsavec",
+					"pni",
+					"sse2",
+					"ss",
+					"bmi1",
+					"bmi2",
+					"xsaves"
+				]
+			},
+			"operation_status": "enabled",
+			"cRegion": "az1.dc12",
+			"bandwidths": []
+		},
+		{
+			"cAZ": "az1",
+			"cHAs": [
+				{
+					"name": "cailing",
+					"metadatas": [
+						{
+							"value": "true",
+							"key": "cailing",
+							"op": "="
+						},
+						{
+							"value": "az1.dc12",
+							"key": "availability_zone",
+							"op": "="
+						}
+					]
+				}
+			],
+			"running_status": "UP",
+			"type": "host",
+			"hostname": "D0813EC1-EFD0-B68C-E811-B5945AD709A4",
+			"numa_topology": {
+				"cells": [
+					{
+						"memory_used": 19345,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								3,
+								27
+							],
+							[
+								4,
+								28
+							],
+							[
+								5,
+								29
+							],
+							[
+								6,
+								30
+							],
+							[
+								7,
+								31
+							],
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								11,
+								35
+							]
+						],
+						"cpuset": [
+							[
+								3,
+								27
+							],
+							[
+								4,
+								28
+							],
+							[
+								5,
+								29
+							],
+							[
+								6,
+								30
+							],
+							[
+								7,
+								31
+							],
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								11,
+								35
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 18,
+						"cpus_reserved_num": 0,
+						"memory": 194741,
+						"mempages": [
+							{
+								"total": 4502829,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 3903744
+							},
+							{
+								"total": 173,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 4
+							}
+						],
+						"cpus_num": 18,
+						"id": 0,
+						"memory_reserved": 0
+					},
+					{
+						"memory_used": 6033,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								12,
+								36
+							],
+							[
+								13,
+								37
+							],
+							[
+								14,
+								38
+							],
+							[
+								15,
+								39
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								19,
+								43
+							],
+							[
+								20,
+								44
+							],
+							[
+								21,
+								45
+							],
+							[
+								22,
+								46
+							],
+							[
+								23,
+								47
+							]
+						],
+						"cpuset": [
+							[
+								12,
+								36
+							],
+							[
+								13,
+								37
+							],
+							[
+								14,
+								38
+							],
+							[
+								15,
+								39
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								19,
+								43
+							],
+							[
+								20,
+								44
+							],
+							[
+								21,
+								45
+							],
+							[
+								22,
+								46
+							],
+							[
+								23,
+								47
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 24,
+						"cpus_reserved_num": 0,
+						"memory": 196608,
+						"mempages": [
+							{
+								"total": 4980736,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 1544448
+							},
+							{
+								"total": 173,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 0
+							}
+						],
+						"cpus_num": 24,
+						"id": 1,
+						"memory_reserved": 0
+					}
+				]
+			},
+			"cpu_info": {
+				"vendor": "Intel",
+				"model": "Skylake-Server",
+				"arch": "x86_64",
+				"features": [
+					"pku",
+					"rtm",
+					"tsc_adjust",
+					"vme",
+					"pge",
+					"xsaveopt",
+					"smep",
+					"fpu",
+					"lm",
+					"tsc",
+					"adx",
+					"fxsr",
+					"tm",
+					"pclmuldq",
+					"xgetbv1",
+					"tsc-deadline",
+					"arat",
+					"de",
+					"aes",
+					"pse",
+					"sse",
+					"f16c",
+					"ds",
+					"mpx",
+					"avx512f",
+					"avx2",
+					"pbe",
+					"mbm_local",
+					"cx16",
+					"ds_cpl",
+					"movbe",
+					"cmt",
+					"vmx",
+					"sep",
+					"avx512dq",
+					"xsave",
+					"erms",
+					"hle",
+					"est",
+					"smx",
+					"abm",
+					"sse4.1",
+					"sse4.2",
+					"ssbd",
+					"acpi",
+					"popcnt",
+					"mmx",
+					"osxsave",
+					"clwb",
+					"dca",
+					"pdcm",
+					"invtsc",
+					"tm2",
+					"lahf_lm",
+					"pcid",
+					"rdrand",
+					"avx512vl",
+					"x2apic",
+					"smap",
+					"clflush",
+					"dtes64",
+					"xtpr",
+					"avx512bw",
+					"msr",
+					"fma",
+					"cx8",
+					"mce",
+					"avx512cd",
+					"mca",
+					"mbm_total",
+					"rdseed",
+					"apic",
+					"fsgsbase",
+					"rdtscp",
+					"ssse3",
+					"pse36",
+					"mtrr",
+					"avx",
+					"syscall",
+					"invpcid",
+					"cmov",
+					"spec-ctrl",
+					"clflushopt",
+					"pat",
+					"3dnowprefetch",
+					"nx",
+					"pae",
+					"ht",
+					"pdpe1gb",
+					"xsavec",
+					"pni",
+					"sse2",
+					"ss",
+					"bmi1",
+					"bmi2",
+					"xsaves"
+				]
+			},
+			"operation_status": "enabled",
+			"cRegion": "az1.dc12",
+			"bandwidths": []
+		},
+		{
+			"cAZ": "az1",
+			"cHAs": [
+				{
+					"name": "DRA",
+					"metadatas": [
+						{
+							"value": "true",
+							"key": "DRA",
+							"op": "="
+						},
+						{
+							"value": "az1.dc12",
+							"key": "availability_zone",
+							"op": "="
+						}
+					]
+				}
+			],
+			"running_status": "UP",
+			"type": "host",
+			"hostname": "37863EC1-EFD0-FB8A-E811-DA94F2700FC5",
+			"numa_topology": {
+				"cells": [
+					{
+						"memory_used": 19345,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								27,
+								3
+							],
+							[
+								28,
+								4
+							],
+							[
+								5,
+								29
+							],
+							[
+								30,
+								6
+							],
+							[
+								31,
+								7
+							],
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								35,
+								11
+							]
+						],
+						"cpuset": [
+							[
+								27,
+								3
+							],
+							[
+								28,
+								4
+							],
+							[
+								5,
+								29
+							],
+							[
+								30,
+								6
+							],
+							[
+								31,
+								7
+							],
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								35,
+								11
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 18,
+						"cpus_reserved_num": 0,
+						"memory": 194741,
+						"mempages": [
+							{
+								"total": 4502829,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 3903744
+							},
+							{
+								"total": 173,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 4
+							}
+						],
+						"cpus_num": 18,
+						"id": 0,
+						"memory_reserved": 0
+					},
+					{
+						"memory_used": 6033,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								36,
+								12
+							],
+							[
+								13,
+								37
+							],
+							[
+								38,
+								14
+							],
+							[
+								39,
+								15
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								43,
+								19
+							],
+							[
+								44,
+								20
+							],
+							[
+								21,
+								45
+							],
+							[
+								46,
+								22
+							],
+							[
+								47,
+								23
+							]
+						],
+						"cpuset": [
+							[
+								36,
+								12
+							],
+							[
+								13,
+								37
+							],
+							[
+								38,
+								14
+							],
+							[
+								39,
+								15
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								43,
+								19
+							],
+							[
+								44,
+								20
+							],
+							[
+								21,
+								45
+							],
+							[
+								46,
+								22
+							],
+							[
+								47,
+								23
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 24,
+						"cpus_reserved_num": 0,
+						"memory": 196608,
+						"mempages": [
+							{
+								"total": 4980736,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 1544448
+							},
+							{
+								"total": 173,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 0
+							}
+						],
+						"cpus_num": 24,
+						"id": 1,
+						"memory_reserved": 0
+					}
+				]
+			},
+			"cpu_info": {
+				"vendor": "Intel",
+				"model": "Skylake-Server",
+				"arch": "x86_64",
+				"features": [
+					"pku",
+					"rtm",
+					"tsc_adjust",
+					"vme",
+					"pge",
+					"xsaveopt",
+					"smep",
+					"fpu",
+					"lm",
+					"tsc",
+					"adx",
+					"fxsr",
+					"tm",
+					"pclmuldq",
+					"xgetbv1",
+					"tsc-deadline",
+					"arat",
+					"de",
+					"aes",
+					"pse",
+					"sse",
+					"f16c",
+					"ds",
+					"mpx",
+					"avx512f",
+					"avx2",
+					"pbe",
+					"mbm_local",
+					"cx16",
+					"ds_cpl",
+					"movbe",
+					"cmt",
+					"vmx",
+					"sep",
+					"avx512dq",
+					"xsave",
+					"erms",
+					"hle",
+					"est",
+					"smx",
+					"abm",
+					"sse4.1",
+					"sse4.2",
+					"ssbd",
+					"acpi",
+					"popcnt",
+					"mmx",
+					"osxsave",
+					"clwb",
+					"dca",
+					"pdcm",
+					"invtsc",
+					"tm2",
+					"lahf_lm",
+					"pcid",
+					"rdrand",
+					"avx512vl",
+					"x2apic",
+					"smap",
+					"clflush",
+					"dtes64",
+					"xtpr",
+					"avx512bw",
+					"msr",
+					"fma",
+					"cx8",
+					"mce",
+					"avx512cd",
+					"mca",
+					"mbm_total",
+					"rdseed",
+					"apic",
+					"fsgsbase",
+					"rdtscp",
+					"ssse3",
+					"pse36",
+					"mtrr",
+					"avx",
+					"syscall",
+					"invpcid",
+					"cmov",
+					"spec-ctrl",
+					"clflushopt",
+					"pat",
+					"3dnowprefetch",
+					"nx",
+					"pae",
+					"ht",
+					"pdpe1gb",
+					"xsavec",
+					"pni",
+					"sse2",
+					"ss",
+					"bmi1",
+					"bmi2",
+					"xsaves"
+				]
+			},
+			"operation_status": "enabled",
+			"cRegion": "az1.dc12",
+			"bandwidths": []
+		},
+		{
+			"cAZ": "az1",
+			"cHAs": [
+				{
+					"name": "DRA",
+					"metadatas": [
+						{
+							"value": "true",
+							"key": "DRA",
+							"op": "="
+						},
+						{
+							"value": "az1.dc12",
+							"key": "availability_zone",
+							"op": "="
+						}
+					]
+				}
+			],
+			"running_status": "UP",
+			"type": "host",
+			"hostname": "9D853EC1-EFD0-38BA-E811-D894EC7DA87C",
+			"numa_topology": {
+				"cells": [
+					{
+						"memory_used": 19345,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								27,
+								3
+							],
+							[
+								28,
+								4
+							],
+							[
+								5,
+								29
+							],
+							[
+								30,
+								6
+							],
+							[
+								31,
+								7
+							],
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								35,
+								11
+							]
+						],
+						"cpuset": [
+							[
+								27,
+								3
+							],
+							[
+								28,
+								4
+							],
+							[
+								5,
+								29
+							],
+							[
+								30,
+								6
+							],
+							[
+								31,
+								7
+							],
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								35,
+								11
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 18,
+						"cpus_reserved_num": 0,
+						"memory": 194741,
+						"mempages": [
+							{
+								"total": 4502829,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 3903744
+							},
+							{
+								"total": 173,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 4
+							}
+						],
+						"cpus_num": 18,
+						"id": 0,
+						"memory_reserved": 0
+					},
+					{
+						"memory_used": 6033,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								36,
+								12
+							],
+							[
+								13,
+								37
+							],
+							[
+								38,
+								14
+							],
+							[
+								39,
+								15
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								43,
+								19
+							],
+							[
+								44,
+								20
+							],
+							[
+								21,
+								45
+							],
+							[
+								46,
+								22
+							],
+							[
+								47,
+								23
+							]
+						],
+						"cpuset": [
+							[
+								36,
+								12
+							],
+							[
+								13,
+								37
+							],
+							[
+								38,
+								14
+							],
+							[
+								39,
+								15
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								43,
+								19
+							],
+							[
+								44,
+								20
+							],
+							[
+								21,
+								45
+							],
+							[
+								46,
+								22
+							],
+							[
+								47,
+								23
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 24,
+						"cpus_reserved_num": 0,
+						"memory": 196608,
+						"mempages": [
+							{
+								"total": 4980736,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 1544448
+							},
+							{
+								"total": 173,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 0
+							}
+						],
+						"cpus_num": 24,
+						"id": 1,
+						"memory_reserved": 0
+					}
+				]
+			},
+			"cpu_info": {
+				"vendor": "Intel",
+				"model": "Skylake-Server",
+				"arch": "x86_64",
+				"features": [
+					"pku",
+					"rtm",
+					"tsc_adjust",
+					"vme",
+					"pge",
+					"xsaveopt",
+					"smep",
+					"fpu",
+					"lm",
+					"tsc",
+					"adx",
+					"fxsr",
+					"tm",
+					"pclmuldq",
+					"xgetbv1",
+					"tsc-deadline",
+					"arat",
+					"de",
+					"aes",
+					"pse",
+					"sse",
+					"f16c",
+					"ds",
+					"mpx",
+					"avx512f",
+					"avx2",
+					"pbe",
+					"mbm_local",
+					"cx16",
+					"ds_cpl",
+					"movbe",
+					"cmt",
+					"vmx",
+					"sep",
+					"avx512dq",
+					"xsave",
+					"erms",
+					"hle",
+					"est",
+					"smx",
+					"abm",
+					"sse4.1",
+					"sse4.2",
+					"ssbd",
+					"acpi",
+					"popcnt",
+					"mmx",
+					"osxsave",
+					"clwb",
+					"dca",
+					"pdcm",
+					"invtsc",
+					"tm2",
+					"lahf_lm",
+					"pcid",
+					"rdrand",
+					"avx512vl",
+					"x2apic",
+					"smap",
+					"clflush",
+					"dtes64",
+					"xtpr",
+					"avx512bw",
+					"msr",
+					"fma",
+					"cx8",
+					"mce",
+					"avx512cd",
+					"mca",
+					"mbm_total",
+					"rdseed",
+					"apic",
+					"fsgsbase",
+					"rdtscp",
+					"ssse3",
+					"pse36",
+					"mtrr",
+					"avx",
+					"syscall",
+					"invpcid",
+					"cmov",
+					"spec-ctrl",
+					"clflushopt",
+					"pat",
+					"3dnowprefetch",
+					"nx",
+					"pae",
+					"ht",
+					"pdpe1gb",
+					"xsavec",
+					"pni",
+					"sse2",
+					"ss",
+					"bmi1",
+					"bmi2",
+					"xsaves"
+				]
+			},
+			"operation_status": "enabled",
+			"cRegion": "az1.dc12",
+			"bandwidths": []
+		},
+		{
+			"cAZ": "az1",
+			"cHAs": [
+				{
+					"name": "DRA",
+					"metadatas": [
+						{
+							"value": "true",
+							"key": "DRA",
+							"op": "="
+						},
+						{
+							"value": "az1.dc12",
+							"key": "availability_zone",
+							"op": "="
+						}
+					]
+				}
+			],
+			"running_status": "UP",
+			"type": "host",
+			"hostname": "9772AB98-0A34-A396-E811-A4A24C5086BF",
+			"numa_topology": {
+				"cells": [
+					{
+						"memory_used": 19345,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								3,
+								27
+							],
+							[
+								4,
+								28
+							],
+							[
+								5,
+								29
+							],
+							[
+								6,
+								30
+							],
+							[
+								7,
+								31
+							],
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								11,
+								35
+							]
+						],
+						"cpuset": [
+							[
+								3,
+								27
+							],
+							[
+								4,
+								28
+							],
+							[
+								5,
+								29
+							],
+							[
+								6,
+								30
+							],
+							[
+								7,
+								31
+							],
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								11,
+								35
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 18,
+						"cpus_reserved_num": 0,
+						"memory": 194741,
+						"mempages": [
+							{
+								"total": 4502829,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 3903744
+							},
+							{
+								"total": 173,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 4
+							}
+						],
+						"cpus_num": 18,
+						"id": 0,
+						"memory_reserved": 0
+					},
+					{
+						"memory_used": 6033,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								12,
+								36
+							],
+							[
+								13,
+								37
+							],
+							[
+								14,
+								38
+							],
+							[
+								15,
+								39
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								19,
+								43
+							],
+							[
+								20,
+								44
+							],
+							[
+								21,
+								45
+							],
+							[
+								22,
+								46
+							],
+							[
+								23,
+								47
+							]
+						],
+						"cpuset": [
+							[
+								12,
+								36
+							],
+							[
+								13,
+								37
+							],
+							[
+								14,
+								38
+							],
+							[
+								15,
+								39
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								19,
+								43
+							],
+							[
+								20,
+								44
+							],
+							[
+								21,
+								45
+							],
+							[
+								22,
+								46
+							],
+							[
+								23,
+								47
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 24,
+						"cpus_reserved_num": 0,
+						"memory": 196608,
+						"mempages": [
+							{
+								"total": 4980736,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 1544448
+							},
+							{
+								"total": 173,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 0
+							}
+						],
+						"cpus_num": 24,
+						"id": 1,
+						"memory_reserved": 0
+					}
+				]
+			},
+			"cpu_info": {
+				"vendor": "Intel",
+				"model": "Skylake-Server",
+				"arch": "x86_64",
+				"features": [
+					"pku",
+					"rtm",
+					"tsc_adjust",
+					"vme",
+					"pge",
+					"xsaveopt",
+					"smep",
+					"fpu",
+					"lm",
+					"tsc",
+					"adx",
+					"fxsr",
+					"tm",
+					"pclmuldq",
+					"xgetbv1",
+					"tsc-deadline",
+					"arat",
+					"de",
+					"aes",
+					"pse",
+					"sse",
+					"f16c",
+					"ds",
+					"mpx",
+					"avx512f",
+					"avx2",
+					"pbe",
+					"mbm_local",
+					"cx16",
+					"ds_cpl",
+					"movbe",
+					"cmt",
+					"vmx",
+					"sep",
+					"avx512dq",
+					"xsave",
+					"erms",
+					"hle",
+					"est",
+					"smx",
+					"abm",
+					"sse4.1",
+					"sse4.2",
+					"ssbd",
+					"acpi",
+					"popcnt",
+					"mmx",
+					"osxsave",
+					"clwb",
+					"dca",
+					"pdcm",
+					"invtsc",
+					"tm2",
+					"lahf_lm",
+					"pcid",
+					"rdrand",
+					"avx512vl",
+					"x2apic",
+					"smap",
+					"clflush",
+					"dtes64",
+					"xtpr",
+					"avx512bw",
+					"msr",
+					"fma",
+					"cx8",
+					"mce",
+					"avx512cd",
+					"mca",
+					"mbm_total",
+					"rdseed",
+					"apic",
+					"fsgsbase",
+					"rdtscp",
+					"ssse3",
+					"pse36",
+					"mtrr",
+					"avx",
+					"syscall",
+					"invpcid",
+					"cmov",
+					"spec-ctrl",
+					"clflushopt",
+					"pat",
+					"3dnowprefetch",
+					"nx",
+					"pae",
+					"ht",
+					"pdpe1gb",
+					"xsavec",
+					"pni",
+					"sse2",
+					"ss",
+					"bmi1",
+					"bmi2",
+					"xsaves"
+				]
+			},
+			"operation_status": "enabled",
+			"cRegion": "az1.dc12",
+			"bandwidths": []
+		},
+		{
+			"cAZ": "az1",
+			"cHAs": [
+				{
+					"name": "DRA",
+					"metadatas": [
+						{
+							"value": "true",
+							"key": "DRA",
+							"op": "="
+						},
+						{
+							"value": "az1.dc12",
+							"key": "availability_zone",
+							"op": "="
+						}
+					]
+				}
+			],
+			"running_status": "UP",
+			"type": "host",
+			"hostname": "F874AB98-0A34-0180-E811-A4A24CFCA62F",
+			"numa_topology": {
+				"cells": [
+					{
+						"memory_used": 19345,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								27,
+								3
+							],
+							[
+								28,
+								4
+							],
+							[
+								5,
+								29
+							],
+							[
+								30,
+								6
+							],
+							[
+								31,
+								7
+							],
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								35,
+								11
+							]
+						],
+						"cpuset": [
+							[
+								27,
+								3
+							],
+							[
+								28,
+								4
+							],
+							[
+								5,
+								29
+							],
+							[
+								30,
+								6
+							],
+							[
+								31,
+								7
+							],
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								35,
+								11
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 18,
+						"cpus_reserved_num": 0,
+						"memory": 194741,
+						"mempages": [
+							{
+								"total": 4502829,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 3903744
+							},
+							{
+								"total": 173,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 4
+							}
+						],
+						"cpus_num": 18,
+						"id": 0,
+						"memory_reserved": 0
+					},
+					{
+						"memory_used": 6033,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								36,
+								12
+							],
+							[
+								13,
+								37
+							],
+							[
+								38,
+								14
+							],
+							[
+								39,
+								15
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								43,
+								19
+							],
+							[
+								44,
+								20
+							],
+							[
+								21,
+								45
+							],
+							[
+								46,
+								22
+							],
+							[
+								47,
+								23
+							]
+						],
+						"cpuset": [
+							[
+								36,
+								12
+							],
+							[
+								13,
+								37
+							],
+							[
+								38,
+								14
+							],
+							[
+								39,
+								15
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								43,
+								19
+							],
+							[
+								44,
+								20
+							],
+							[
+								21,
+								45
+							],
+							[
+								46,
+								22
+							],
+							[
+								47,
+								23
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 24,
+						"cpus_reserved_num": 0,
+						"memory": 196608,
+						"mempages": [
+							{
+								"total": 4980736,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 1544448
+							},
+							{
+								"total": 173,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 0
+							}
+						],
+						"cpus_num": 24,
+						"id": 1,
+						"memory_reserved": 0
+					}
+				]
+			},
+			"cpu_info": {
+				"vendor": "Intel",
+				"model": "Skylake-Server",
+				"arch": "x86_64",
+				"features": [
+					"pku",
+					"rtm",
+					"tsc_adjust",
+					"vme",
+					"pge",
+					"xsaveopt",
+					"smep",
+					"fpu",
+					"lm",
+					"tsc",
+					"adx",
+					"fxsr",
+					"tm",
+					"pclmuldq",
+					"xgetbv1",
+					"tsc-deadline",
+					"arat",
+					"de",
+					"aes",
+					"pse",
+					"sse",
+					"f16c",
+					"ds",
+					"mpx",
+					"avx512f",
+					"avx2",
+					"pbe",
+					"mbm_local",
+					"cx16",
+					"ds_cpl",
+					"movbe",
+					"cmt",
+					"vmx",
+					"sep",
+					"avx512dq",
+					"xsave",
+					"erms",
+					"hle",
+					"est",
+					"smx",
+					"abm",
+					"sse4.1",
+					"sse4.2",
+					"ssbd",
+					"acpi",
+					"popcnt",
+					"mmx",
+					"osxsave",
+					"clwb",
+					"dca",
+					"pdcm",
+					"invtsc",
+					"tm2",
+					"lahf_lm",
+					"pcid",
+					"rdrand",
+					"avx512vl",
+					"x2apic",
+					"smap",
+					"clflush",
+					"dtes64",
+					"xtpr",
+					"avx512bw",
+					"msr",
+					"fma",
+					"cx8",
+					"mce",
+					"avx512cd",
+					"mca",
+					"mbm_total",
+					"rdseed",
+					"apic",
+					"fsgsbase",
+					"rdtscp",
+					"ssse3",
+					"pse36",
+					"mtrr",
+					"avx",
+					"syscall",
+					"invpcid",
+					"cmov",
+					"spec-ctrl",
+					"clflushopt",
+					"pat",
+					"3dnowprefetch",
+					"nx",
+					"pae",
+					"ht",
+					"pdpe1gb",
+					"xsavec",
+					"pni",
+					"sse2",
+					"ss",
+					"bmi1",
+					"bmi2",
+					"xsaves"
+				]
+			},
+			"operation_status": "enabled",
+			"cRegion": "az1.dc12",
+			"bandwidths": []
+		},
+		{
+			"cAZ": "az1",
+			"cHAs": [
+				{
+					"name": "DRA",
+					"metadatas": [
+						{
+							"value": "true",
+							"key": "DRA",
+							"op": "="
+						},
+						{
+							"value": "az1.dc12",
+							"key": "availability_zone",
+							"op": "="
+						}
+					]
+				}
+			],
+			"running_status": "UP",
+			"type": "host",
+			"hostname": "8AD6FFC1-EFD0-B8A1-E811-A89F522BD58E",
+			"numa_topology": {
+				"cells": [
+					{
+						"memory_used": 19150,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								3,
+								27
+							],
+							[
+								4,
+								28
+							],
+							[
+								5,
+								29
+							],
+							[
+								6,
+								30
+							],
+							[
+								7,
+								31
+							],
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								11,
+								35
+							]
+						],
+						"cpuset": [
+							[
+								3,
+								27
+							],
+							[
+								4,
+								28
+							],
+							[
+								5,
+								29
+							],
+							[
+								6,
+								30
+							],
+							[
+								7,
+								31
+							],
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								11,
+								35
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 18,
+						"cpus_reserved_num": 0,
+						"memory": 195509,
+						"mempages": [
+							{
+								"total": 6010157,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 3853824
+							},
+							{
+								"total": 168,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 4
+							}
+						],
+						"cpus_num": 18,
+						"id": 0,
+						"memory_reserved": 0
+					},
+					{
+						"memory_used": 5838,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								12,
+								36
+							],
+							[
+								13,
+								37
+							],
+							[
+								14,
+								38
+							],
+							[
+								15,
+								39
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								19,
+								43
+							],
+							[
+								20,
+								44
+							],
+							[
+								21,
+								45
+							],
+							[
+								22,
+								46
+							],
+							[
+								23,
+								47
+							]
+						],
+						"cpuset": [
+							[
+								12,
+								36
+							],
+							[
+								13,
+								37
+							],
+							[
+								14,
+								38
+							],
+							[
+								15,
+								39
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								19,
+								43
+							],
+							[
+								20,
+								44
+							],
+							[
+								21,
+								45
+							],
+							[
+								22,
+								46
+							],
+							[
+								23,
+								47
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 24,
+						"cpus_reserved_num": 0,
+						"memory": 180224,
+						"mempages": [
+							{
+								"total": 2097152,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 1494528
+							},
+							{
+								"total": 168,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 0
+							}
+						],
+						"cpus_num": 24,
+						"id": 1,
+						"memory_reserved": 0
+					}
+				]
+			},
+			"cpu_info": {
+				"vendor": "Intel",
+				"model": "Skylake-Server",
+				"arch": "x86_64",
+				"features": [
+					"pku",
+					"rtm",
+					"tsc_adjust",
+					"vme",
+					"pge",
+					"xsaveopt",
+					"smep",
+					"fpu",
+					"lm",
+					"tsc",
+					"adx",
+					"fxsr",
+					"tm",
+					"pclmuldq",
+					"xgetbv1",
+					"tsc-deadline",
+					"arat",
+					"de",
+					"aes",
+					"pse",
+					"sse",
+					"f16c",
+					"ds",
+					"mpx",
+					"avx512f",
+					"avx2",
+					"pbe",
+					"mbm_local",
+					"cx16",
+					"ds_cpl",
+					"movbe",
+					"cmt",
+					"vmx",
+					"sep",
+					"avx512dq",
+					"xsave",
+					"erms",
+					"hle",
+					"est",
+					"smx",
+					"abm",
+					"sse4.1",
+					"sse4.2",
+					"ssbd",
+					"acpi",
+					"popcnt",
+					"mmx",
+					"osxsave",
+					"clwb",
+					"dca",
+					"pdcm",
+					"invtsc",
+					"tm2",
+					"lahf_lm",
+					"pcid",
+					"rdrand",
+					"avx512vl",
+					"x2apic",
+					"smap",
+					"clflush",
+					"dtes64",
+					"xtpr",
+					"avx512bw",
+					"msr",
+					"fma",
+					"cx8",
+					"mce",
+					"avx512cd",
+					"mca",
+					"mbm_total",
+					"rdseed",
+					"apic",
+					"fsgsbase",
+					"rdtscp",
+					"ssse3",
+					"pse36",
+					"mtrr",
+					"avx",
+					"syscall",
+					"invpcid",
+					"cmov",
+					"spec-ctrl",
+					"clflushopt",
+					"pat",
+					"3dnowprefetch",
+					"nx",
+					"pae",
+					"ht",
+					"pdpe1gb",
+					"xsavec",
+					"pni",
+					"sse2",
+					"ss",
+					"bmi1",
+					"bmi2",
+					"xsaves"
+				]
+			},
+			"operation_status": "enabled",
+			"cRegion": "az1.dc12",
+			"bandwidths": []
+		},
+		{
+			"cAZ": "az1",
+			"cHAs": [
+				{
+					"name": "DRA",
+					"metadatas": [
+						{
+							"value": "true",
+							"key": "DRA",
+							"op": "="
+						},
+						{
+							"value": "az1.dc12",
+							"key": "availability_zone",
+							"op": "="
+						}
+					]
+				}
+			],
+			"running_status": "UP",
+			"type": "host",
+			"hostname": "1C73AB98-0A34-F387-E811-A7A252B8919D",
+			"numa_topology": {
+				"cells": [
+					{
+						"memory_used": 19345,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								27,
+								3
+							],
+							[
+								28,
+								4
+							],
+							[
+								5,
+								29
+							],
+							[
+								30,
+								6
+							],
+							[
+								31,
+								7
+							],
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								35,
+								11
+							]
+						],
+						"cpuset": [
+							[
+								27,
+								3
+							],
+							[
+								28,
+								4
+							],
+							[
+								5,
+								29
+							],
+							[
+								30,
+								6
+							],
+							[
+								31,
+								7
+							],
+							[
+								8,
+								32
+							],
+							[
+								9,
+								33
+							],
+							[
+								10,
+								34
+							],
+							[
+								35,
+								11
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 18,
+						"cpus_reserved_num": 0,
+						"memory": 194741,
+						"mempages": [
+							{
+								"total": 4502829,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 3903744
+							},
+							{
+								"total": 173,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 4
+							}
+						],
+						"cpus_num": 18,
+						"id": 0,
+						"memory_reserved": 0
+					},
+					{
+						"memory_used": 6033,
+						"memory_allocation_ratio": 1.0,
+						"pinned_cpus": [],
+						"cpus_pinned_num": 0,
+						"unpinned_cpus": [
+							[
+								36,
+								12
+							],
+							[
+								13,
+								37
+							],
+							[
+								38,
+								14
+							],
+							[
+								39,
+								15
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								43,
+								19
+							],
+							[
+								44,
+								20
+							],
+							[
+								21,
+								45
+							],
+							[
+								46,
+								22
+							],
+							[
+								47,
+								23
+							]
+						],
+						"cpuset": [
+							[
+								36,
+								12
+							],
+							[
+								13,
+								37
+							],
+							[
+								38,
+								14
+							],
+							[
+								39,
+								15
+							],
+							[
+								16,
+								40
+							],
+							[
+								17,
+								41
+							],
+							[
+								18,
+								42
+							],
+							[
+								43,
+								19
+							],
+							[
+								44,
+								20
+							],
+							[
+								21,
+								45
+							],
+							[
+								46,
+								22
+							],
+							[
+								47,
+								23
+							]
+						],
+						"cpus_allocation_ratio": 1.0,
+						"cpus_unpinned_num": 24,
+						"cpus_reserved_num": 0,
+						"memory": 196608,
+						"mempages": [
+							{
+								"total": 4980736,
+								"reserved": 0,
+								"size_kb": 4,
+								"used": 1544448
+							},
+							{
+								"total": 173,
+								"reserved": 0,
+								"size_kb": 1048576,
+								"used": 0
+							}
+						],
+						"cpus_num": 24,
+						"id": 1,
+						"memory_reserved": 0
+					}
+				]
+			},
+			"cpu_info": {
+				"vendor": "Intel",
+				"model": "Skylake-Server",
+				"arch": "x86_64",
+				"features": [
+					"pku",
+					"rtm",
+					"tsc_adjust",
+					"vme",
+					"pge",
+					"xsaveopt",
+					"smep",
+					"fpu",
+					"lm",
+					"tsc",
+					"adx",
+					"fxsr",
+					"tm",
+					"pclmuldq",
+					"xgetbv1",
+					"tsc-deadline",
+					"arat",
+					"de",
+					"aes",
+					"pse",
+					"sse",
+					"f16c",
+					"ds",
+					"mpx",
+					"avx512f",
+					"avx2",
+					"pbe",
+					"mbm_local",
+					"cx16",
+					"ds_cpl",
+					"movbe",
+					"cmt",
+					"vmx",
+					"sep",
+					"avx512dq",
+					"xsave",
+					"erms",
+					"hle",
+					"est",
+					"smx",
+					"abm",
+					"sse4.1",
+					"sse4.2",
+					"ssbd",
+					"acpi",
+					"popcnt",
+					"mmx",
+					"osxsave",
+					"clwb",
+					"dca",
+					"pdcm",
+					"invtsc",
+					"tm2",
+					"lahf_lm",
+					"pcid",
+					"rdrand",
+					"avx512vl",
+					"x2apic",
+					"smap",
+					"clflush",
+					"dtes64",
+					"xtpr",
+					"avx512bw",
+					"msr",
+					"fma",
+					"cx8",
+					"mce",
+					"avx512cd",
+					"mca",
+					"mbm_total",
+					"rdseed",
+					"apic",
+					"fsgsbase",
+					"rdtscp",
+					"ssse3",
+					"pse36",
+					"mtrr",
+					"avx",
+					"syscall",
+					"invpcid",
+					"cmov",
+					"spec-ctrl",
+					"clflushopt",
+					"pat",
+					"3dnowprefetch",
+					"nx",
+					"pae",
+					"ht",
+					"pdpe1gb",
+					"xsavec",
+					"pni",
+					"sse2",
+					"ss",
+					"bmi1",
+					"bmi2",
+					"xsaves"
+				]
+			},
+			"operation_status": "enabled",
+			"cRegion": "az1.dc12",
+			"bandwidths": []
+		}
+	]
+}

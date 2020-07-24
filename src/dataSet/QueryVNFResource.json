@@ -1,0 +1,575 @@
+{
+	"VMList": [
+		{
+			"vmnumber": 1,
+			"flavor_extra_specs": {
+				"cpu_mode": "custom",
+				"cpu_policy": "dedicated",
+				"cpu_model": "Broadwell",
+				"numa_nodes": 1,
+				"aggregate_instance_extra_specs": {
+					"availability_zone": "NFV-AZ-HEBAD-01A-ZX-52-AZ3"
+				}
+			},
+			"vdu_type": "SAEGWC",
+			"vdu_id": "NFV-R-HDNJIH-04A-HW-01-VDU-CCFCSU",
+			"vmgroup": {
+				"type": "anti-affinity",
+				"name": "04A-CCFCSU"
+			},
+			"available_zone": "NFV-AZ-HEBAD-01A-ZX-52-AZ3",
+			"vnics": [
+				{
+					"provider_network": "default",
+					"interface_name": "CP_9",
+					"qos": [
+						{
+							"max_kbps": 1000000,
+							"direction": "egress"
+						}
+					]
+				}
+			],
+			"nfv_compute": {
+				"mem_size": 4,
+				"cpu_cores": 4
+			}
+		},
+		{
+			"vmnumber": 1,
+			"flavor_extra_specs": {
+				"cpu_mode": "custom",
+				"cpu_policy": "dedicated",
+				"cpu_model": "Broadwell",
+				"numa_nodes": 1,
+				"aggregate_instance_extra_specs": {
+					"availability_zone": "NFV-AZ-HEBAD-01A-ZX-52-AZ3"
+				}
+			},
+			"vdu_type": "SAEGWC",
+			"vdu_id": "NFV-R-HDNJIH-03A-HW-01-VDU-CCFCSU",
+			"vmgroup": {
+				"type": "anti-affinity",
+				"name": "03A-CCFCSU"
+			},
+			"available_zone": "NFV-AZ-HEBAD-01A-ZX-52-AZ3",
+			"vnics": [
+				{
+					"provider_network": "default",
+					"interface_name": "CP_8",
+					"qos": [
+						{
+							"max_kbps": 1000000,
+							"direction": "egress"
+						}
+					]
+				}
+			],
+			"nfv_compute": {
+				"mem_size": 4,
+				"cpu_cores": 2
+			}
+		},
+		{
+			"vmnumber": 1,
+			"flavor_extra_specs": {
+				"cpu_mode": "custom",
+				"cpu_policy": "dedicated",
+				"cpu_model": "Broadwell",
+				"numa_nodes": 1,
+				"aggregate_instance_extra_specs": {}
+			},
+			"vdu_type": "SAEGWC",
+			"vdu_id": "NFV-R-HDNJIH-03A-HW-01-VDU-SDU_A",
+			"vmgroup": {
+				"type": "anti-affinity",
+				"name": "03A-SDU_A"
+			},
+			"available_zone": "NFV-AZ-HEBAD-01A-ZX-52-AZ3",
+			"vnics": [
+				{
+					"provider_network": "default",
+					"interface_name": "CP_3",
+					"qos": [
+						{
+							"max_kbps": 1000000,
+							"direction": "egress"
+						}
+					]
+				}
+			],
+			"nfv_compute": {
+				"mem_size": 4,
+				"cpu_cores": 2
+			}
+		},
+		{
+			"vmnumber": 1,
+			"flavor_extra_specs": {
+				"cpu_mode": "custom",
+				"cpu_policy": "dedicated",
+				"cpu_model": "",
+				"numa_nodes": 1,
+				"aggregate_instance_extra_specs": {
+					"availability_zone": "NFV-AZ-HEBAD-01A-ZX-52-AZ3"
+				}
+			},
+			"vdu_type": "SAEGWC",
+			"vdu_id": "NFV-R-HDNJIH-03A-HW-01-VDU-SDU_B",
+			"vmgroup": {
+				"type": "anti-affinity",
+				"name": "03A-SDU_B"
+			},
+			"available_zone": "NFV-AZ-HEBAD-01A-ZX-52-AZ3",
+			"vnics": [
+				{
+					"provider_network": "default",
+					"interface_name": "CP_2",
+					"qos": [
+						{
+							"max_kbps": 1000000,
+							"direction": "egress"
+						}
+					]
+				}
+			],
+			"nfv_compute": {
+				"mem_size": 4,
+				"cpu_cores": 2
+			}
+		},
+		{
+			"vmnumber": 1,
+			"flavor_extra_specs": {
+				"cpu_mode": "custom",
+				"cpu_policy": "dedicated",
+				"cpu_model": "Broadwell",
+				"numa_nodes": 1,
+				"aggregate_instance_extra_specs": {
+					"availability_zone": "NFV-AZ-HEBAD-01A-ZX-52-AZ3"
+				}
+			},
+			"vdu_type": "SAEGWC",
+			"vdu_id": "NFV-R-HDNJIH-03A-HW-01-VDU-USAUNMU_dual_standby",
+			"vmgroup": {
+				"type": "anti-affinity",
+				"name": "USAUNMU_dual_standby"
+			},
+			"available_zone": "NFV-AZ-HEBAD-01A-ZX-52-AZ3",
+			"vnics": [
+				{
+					"provider_network": "default",
+					"interface_name": "CP_7",
+					"qos": [
+						{
+							"max_kbps": 1000000,
+							"direction": "egress"
+						}
+					]
+				}
+			],
+			"nfv_compute": {
+				"mem_size": 4,
+				"cpu_cores": 6
+			}
+		},
+		{
+			"vmnumber": 1,
+			"flavor_extra_specs": {
+				"cpu_mode": "custom",
+				"cpu_policy": "dedicated",
+				"cpu_model": "Broadwell",
+				"numa_nodes": 1,
+				"aggregate_instance_extra_specs": {
+					"availability_zone": "NFV-AZ-HEBAD-01A-ZX-52-AZ3"
+				}
+			},
+			"vdu_type": "SAEGWC",
+			"vdu_id": "NFV-R-HDNJIH-03A-HW-01-VDU-CAHCE",
+			"vmgroup": {
+				"type": "anti-affinity",
+				"name": "03A-CAHCE"
+			},
+			"available_zone": "NFV-AZ-HEBAD-01A-ZX-52-AZ3",
+			"vnics": [
+				{
+					"provider_network": "default",
+					"interface_name": "CP_6",
+					"qos": [
+						{
+							"max_kbps": 1000000,
+							"direction": "egress"
+						}
+					]
+				}
+			],
+			"nfv_compute": {
+				"mem_size": 4,
+				"cpu_cores": 2
+			}
+		},
+		{
+			"vmnumber": 1,
+			"flavor_extra_specs": {
+				"cpu_mode": "custom",
+				"cpu_policy": "dedicated",
+				"cpu_model": "Broadwell",
+				"numa_nodes": 1,
+				"aggregate_instance_extra_specs": {
+					"availability_zone": "NFV-AZ-HEBAD-01A-ZX-52-AZ3"
+				}
+			},
+			"vdu_type": "SAEGWC",
+			"vdu_id": "NFV-R-HDNJIH-00A-HW-01-VDU-194CDB",
+			"vmgroup": {
+				"type": "anti-affinity",
+				"name": "00A-194CDB"
+			},
+			"available_zone": "NFV-AZ-HEBAD-01A-ZX-52-AZ3",
+			"vnics": [
+				{
+					"provider_network": "default",
+					"interface_name": "CP_5",
+					"qos": [
+						{
+							"max_kbps": 1000000,
+							"direction": "egress"
+						}
+					]
+				}
+			],
+			"nfv_compute": {
+				"mem_size": 4,
+				"cpu_cores": 6
+			}
+		},
+		{
+			"vmnumber": 1,
+			"flavor_extra_specs": {
+				"cpu_mode": "custom",
+				"cpu_policy": "dedicated",
+				"cpu_model": "Broadwell",
+				"numa_nodes": 1,
+				"aggregate_instance_extra_specs": {
+					"availability_zone": "NFV-AZ-HEBAD-01A-ZX-52-AZ3"
+				}
+			},
+			"vdu_type": "SAEGWC",
+			"vdu_id": "NFV-R-HDNJIH-03A-HW-01-VDU-Deploy",
+			"vmgroup": {
+				"type": "anti-affinity",
+				"name": "03A-Deploy"
+			},
+			"available_zone": "NFV-AZ-HEBAD-01A-ZX-52-AZ3",
+			"vnics": [
+				{
+					"provider_network": "default",
+					"interface_name": "CP_4",
+					"qos": [
+						{
+							"max_kbps": 1000000,
+							"direction": "egress"
+						}
+					]
+				}
+			],
+			"nfv_compute": {
+				"mem_size": 4,
+				"cpu_cores": 2
+			}
+		},
+		{
+			"vmnumber": 1,
+			"flavor_extra_specs": {
+				"cpu_mode": "custom",
+				"cpu_policy": "dedicated",
+				"cpu_model": "Broadwell",
+				"numa_nodes": 1,
+				"aggregate_instance_extra_specs": {
+					"availability_zone": "NFV-AZ-HEBAD-01A-ZX-52-AZ3"
+				}
+			},
+			"vdu_type": "SAEGWC",
+			"vdu_id": "NFV-R-HDNJIH-03A-HW-01-VDU-SLB_56",
+			"vmgroup": {
+				"type": "anti-affinity",
+				"name": "03A-SLB_56"
+			},
+			"available_zone": "NFV-AZ-HEBAD-01A-ZX-52-AZ3",
+			"vnics": [
+				{
+					"provider_network": "default",
+					"interface_name": "CP",
+					"qos": [
+						{
+							"max_kbps": 1000000,
+							"direction": "egress"
+						}
+					]
+				}
+			],
+			"nfv_compute": {
+				"mem_size": 4,
+				"cpu_cores": 4
+			}
+		},
+		{
+			"vmnumber": 1,
+			"flavor_extra_specs": {
+				"cpu_mode": "custom",
+				"cpu_policy": "dedicated",
+				"cpu_model": "",
+				"numa_nodes": null,
+				"aggregate_instance_extra_specs": {}
+			},
+			"vdu_type": "SAEGWC",
+			"vdu_id": "NFV-R-HDNJIH-03A-HW-01-VDU-SPU_K1",
+			"vmgroup": {
+				"type": "anti-affinity",
+				"name": "03A-SPU_K1"
+			},
+			"available_zone": "NFV-AZ-HEBAD-01A-ZX-52-AZ3",
+			"vnics": [
+				{
+					"provider_network": "default",
+					"interface_name": "CP_13",
+					"qos": [
+						{
+							"max_kbps": 1000000,
+							"direction": "egress"
+						}
+					]
+				}
+			],
+			"nfv_compute": {
+				"mem_size": 4,
+				"cpu_cores": 6
+			}
+		},
+		{
+			"vmnumber": 1,
+			"flavor_extra_specs": {
+				"cpu_mode": "custom",
+				"cpu_policy": "dedicated",
+				"cpu_model": "",
+				"numa_nodes": null,
+				"aggregate_instance_extra_specs": {}
+			},
+			"vdu_type": "SAEGWC",
+			"vdu_id": "NFV-R-HDNJIH-03A-HW-01-VDU-OMU",
+			"vmgroup": {
+				"type": "affinity",
+				"name": "03A-OMU"
+			},
+			"available_zone": "NFV-AZ-HEBAD-01A-ZX-52-AZ3",
+			"vnics": [
+				{
+					"provider_network": "default",
+					"interface_name": "CP_12",
+					"qos": [
+						{
+							"max_kbps": 1000000,
+							"direction": "egress"
+						}
+					]
+				}
+			],
+			"nfv_compute": {
+				"mem_size": 4,
+				"cpu_cores": 6
+			}
+		},
+		{
+			"vmnumber": 1,
+			"flavor_extra_specs": {
+				"cpu_mode": "custom",
+				"cpu_policy": "dedicated",
+				"cpu_model": "",
+				"numa_nodes": null,
+				"aggregate_instance_extra_specs": {}
+			},
+			"vdu_type": "SAEGWC",
+			"vdu_id": "NFV-R-HDNJIH-03A-HW-01-VDU-omu",
+			"vmgroup": {
+				"type": "anti-affinity",
+				"name": "omu"
+			},
+			"available_zone": "NFV-AZ-HEBAD-01A-ZX-52-AZ3",
+			"vnics": [
+				{
+					"interface_name": "CP_11",
+					"provider_network": "default"
+				}
+			],
+			"nfv_compute": {
+				"mem_size": 4,
+				"cpu_cores": 6
+			}
+		},
+		{
+			"vmnumber": 1,
+			"flavor_extra_specs": {
+				"cpu_mode": "custom",
+				"cpu_policy": "dedicated",
+				"cpu_model": "",
+				"numa_nodes": null,
+				"aggregate_instance_extra_specs": {}
+			},
+			"vdu_type": "SAEGWC",
+			"vdu_id": "VDU_10",
+			"vmgroup": {
+				"type": "anti-affinity",
+				"name": "g4"
+			},
+			"available_zone": "NFV-AZ-HEBAD-01A-ZX-52-AZ3",
+			"vnics": [
+				{
+					"provider_network": "default",
+					"interface_name": "CP_10",
+					"qos": [
+						{
+							"max_kbps": 1000000,
+							"direction": "egress"
+						}
+					]
+				}
+			],
+			"nfv_compute": {
+				"mem_size": 4,
+				"cpu_cores": 6
+			}
+		},
+		{
+			"vmnumber": 1,
+			"flavor_extra_specs": {
+				"cpu_mode": "custom",
+				"cpu_policy": "dedicated",
+				"cpu_model": "",
+				"numa_nodes": null,
+				"aggregate_instance_extra_specs": {}
+			},
+			"vdu_type": "SAEGWC",
+			"vdu_id": "VDU_17",
+			"vmgroup": {
+				"type": "anti-affinity",
+				"name": "g6"
+			},
+			"available_zone": "NFV-AZ-HEBAD-01A-ZX-52-AZ3",
+			"vnics": [
+				{
+					"provider_network": "default",
+					"interface_name": "CP_17",
+					"qos": [
+						{
+							"max_kbps": 1000000,
+							"direction": "egress"
+						}
+					]
+				}
+			],
+			"nfv_compute": {
+				"mem_size": 4,
+				"cpu_cores": 4
+			}
+		},
+		{
+			"vmnumber": 1,
+			"flavor_extra_specs": {
+				"cpu_mode": "custom",
+				"cpu_policy": "dedicated",
+				"cpu_model": "",
+				"numa_nodes": null,
+				"aggregate_instance_extra_specs": {}
+			},
+			"vdu_type": "SAEGWC",
+			"vdu_id": "VDU_16",
+			"vmgroup": {
+				"type": "anti-affinity",
+				"name": "g6"
+			},
+			"available_zone": "NFV-AZ-HEBAD-01A-ZX-52-AZ3",
+			"vnics": [
+				{
+					"provider_network": "default",
+					"interface_name": "CP_16",
+					"qos": [
+						{
+							"max_kbps": 1000000,
+							"direction": "egress"
+						}
+					]
+				}
+			],
+			"nfv_compute": {
+				"mem_size": 4,
+				"cpu_cores": 4
+			}
+		},
+		{
+			"vmnumber": 1,
+			"flavor_extra_specs": {
+				"cpu_mode": "custom",
+				"cpu_policy": "dedicated",
+				"cpu_model": "",
+				"numa_nodes": null,
+				"aggregate_instance_extra_specs": {}
+			},
+			"vdu_type": "SAEGWC",
+			"vdu_id": "VDU_15",
+			"vmgroup": {
+				"type": "anti-affinity",
+				"name": "g4"
+			},
+			"available_zone": "NFV-AZ-HEBAD-01A-ZX-52-AZ3",
+			"vnics": [
+				{
+					"provider_network": "default",
+					"interface_name": "CP_15",
+					"qos": [
+						{
+							"max_kbps": 1000000,
+							"direction": "egress"
+						}
+					]
+				}
+			],
+			"nfv_compute": {
+				"mem_size": 4,
+				"cpu_cores": 6
+			}
+		},
+		{
+			"vmnumber": 1,
+			"flavor_extra_specs": {
+				"cpu_mode": "custom",
+				"cpu_policy": "dedicated",
+				"cpu_model": "",
+				"numa_nodes": null,
+				"aggregate_instance_extra_specs": {}
+			},
+			"vdu_type": "SAEGWC",
+			"vdu_id": "VDU_14",
+			"vmgroup": {
+				"type": "anti-affinity",
+				"name": "g3"
+			},
+			"available_zone": "NFV-AZ-HEBAD-01A-ZX-52-AZ3",
+			"vnics": [
+				{
+					"provider_network": "default",
+					"interface_name": "CP_14",
+					"qos": [
+						{
+							"max_kbps": 1000000,
+							"direction": "egress"
+						}
+					]
+				}
+			],
+			"nfv_compute": {
+				"mem_size": 4,
+				"cpu_cores": 2
+			}
+		}
+	]
+}
