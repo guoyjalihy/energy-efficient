@@ -38,10 +38,10 @@
           _host.total_bandwidths_egress_vsw = hosts[i].bandwidths[0]?hosts[i].bandwidths[0].total_bandwidths_egress_vsw:''
           _host.total_mem = _host.numa_node1_mem1 + _host.numa_node2_mem1
           _tableData.push(_host)
-          this.tableData = _tableData.sort(this.sortBy).slice(0,50)
-
-          this.$store.commit('setAllHostInfo', _tableData);
         }
+        console.log("hosts:{}",_tableData)
+        this.tableData = _tableData.sort(this.sortBy).slice(0,50)
+        this.$store.commit('setAllHostInfo', _tableData);
       },
       sortBy: function (obj1, obj2) {//比较函数
         if (obj1.total_cpu > obj2.total_cpu) {

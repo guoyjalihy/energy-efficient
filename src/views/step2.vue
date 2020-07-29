@@ -32,7 +32,7 @@
         this.parseQueryVNFResource(_tableData)
         this.tableData = _tableData.sort(this.sortBy).slice(0,50)
         this.$store.commit('setAllVms', _tableData.sort(this.sortBy));
-        console.log(_tableData.sort(this.sortBy))
+        console.log("allVms:{}" , _tableData.sort(this.sortBy))
       },
       parseVnfVM(tableData) {
         //解析VNFVM
@@ -71,7 +71,6 @@
             _tableData.push(_vm)
           }
         }
-        console.log(_tableData)
         return _tableData
       },
 

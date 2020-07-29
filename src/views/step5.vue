@@ -66,6 +66,7 @@
         }
       }
       this.tableData = selectedHost
+      this.$store.commit('setMoveResult', selectedHost);
     },
     methods: {
       allowedDeployVmToHost: function(vm,host){

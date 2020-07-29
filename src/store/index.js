@@ -14,7 +14,10 @@ export default new Vuex.Store({
     allVms: [],
     hostVM: [],
     todoHostVms: [],
-    todoVms: []
+    todoVms: [],
+    moveResult: [],
+    allPowerBefore: 0,
+    allPowerAfter: 0
   },
 
   mutations: {
@@ -34,6 +37,15 @@ export default new Vuex.Store({
     setTodoVms(state,todoVms){
       state.todoVms = todoVms
     },
+    setMoveResult(state,moveResult){
+      state.moveResult = moveResult
+    },
+    setAllPowerBefore(state,allPowerBefore){
+      state.allPowerBefore = allPowerBefore
+    },
+    setAllPowerAfter(state,allPowerAfter){
+      state.allPowerAfter = allPowerAfter
+    },
 
   },
 
@@ -44,7 +56,10 @@ export default new Vuex.Store({
     getAllVms: state => state.allVms,
     getHostVM: state => state.hostVM,
     getTodoHostVms: state => state.todoHostVms,
-    getTodoVms: state => state.todoVms
+    getTodoVms: state => state.todoVms,
+    getMoveResult: state => state.moveResult,
+    getAllPowerBefore: state => state.allPowerBefore,
+    getAllPowerAfter: state => state.allPowerAfter
 
   },
 

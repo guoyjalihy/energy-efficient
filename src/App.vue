@@ -8,6 +8,7 @@
                 <Step title="虚拟机与主机对应关系"></Step>
                 <Step title="待迁移虚拟机列表解析"></Step>
                 <Step title="迁移方案产出"></Step>
+                <Step title="可下电主机列表"></Step>
             </Steps>
             <router-link to="" @click.native="back">上一步</router-link> |
             <router-link to="" @click.native="next">下一步</router-link>
@@ -24,7 +25,7 @@
         },
         methods: {
             next () {
-                if (this.current == 4) {
+                if (this.current == 5) {
                     this.current = 0;
                 } else {
                     this.current += 1;
@@ -39,11 +40,13 @@
                     this.$router.push("/step4")
                 }else if(this.current == 4){
                     this.$router.push("/step5")
+                }else if(this.current == 5){
+                    this.$router.push("/step6")
                 }
             },
             back () {
                 if (this.current == 0) {
-                    this.current = 4;
+                    this.current = 5;
                 } else {
                     this.current -= 1;
                 }
@@ -57,6 +60,8 @@
                     this.$router.push("/step4")
                 }else if(this.current == 4){
                     this.$router.push("/step5")
+                }else if(this.current == 5){
+                    this.$router.push("/step6")
                 }
             }
         }

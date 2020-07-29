@@ -19,28 +19,37 @@
             type: 'index',
             width: 100,
             align: 'center',
+            fixed: 'left',
           },
           {
             title: 'hostName',
             key: 'hostName',
             align: 'center',
-            width: 250,
+            width: 200,
+            fixed: 'left',
           },
           {
             title: 'vmIdList',
             key: 'vmIdList',
             align: 'center',
-            width: 580,
+            width: 500,
+            fixed: 'left',
           },
           {
-            title: 'cpuutil',
-            key: 'cpuutil',
+            title: 'cputotal',
+            key: 'cputotal',
             align: 'center',
             width: 100,
           },
           {
-            title: 'ramutil',
-            key: 'ramutil',
+            title: 'cpu_used',
+            key: 'cpu_used',
+            align: 'center',
+            width: 100,
+          },
+          {
+            title: 'cpuutil',
+            key: 'cpuutil',
             align: 'center',
             width: 100,
           },
@@ -52,10 +61,29 @@
             sortable: true
           },
           {
+            title: 'ramtotal',
+            key: 'ramtotal',
+            align: 'center',
+            width: 100,
+          },
+          {
+            title: 'mem_used',
+            key: 'mem_used',
+            align: 'center',
+            width: 100,
+          },
+          {
+            title: 'ramutil',
+            key: 'ramutil',
+            align: 'center',
+            width: 100,
+          },
+          {
             title: 'power',
             key: 'power',
             align: 'center',
             width: 200,
+            fixed: 'right',
           }
         ],
       }
