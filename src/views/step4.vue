@@ -1,74 +1,139 @@
 <template>
   <div class="step4">
-    <Select v-model="model" style="width:200px">
-      <Option v-for="item in type" :value="item.value" :key="item.value">{{ item.label }}</Option>
+    <Select v-model="model" @on-change="changeType" style="width:200px">
+      <Option v-for="item in moveType" :value="item.value" :key="item.value">{{ item.label }}</Option>
     </Select>
-    <Input v-model="hostNum" placeholder="请输入主机数量,默认10" style="width: 300px" />
+    <Input v-model="hostNum" v-show="showHostNum" placeholder="请输入主机数量,默认10" style="width: 200px" />
     <Button type="primary" @click="parse">解析</Button>
+    <Select v-model="tableType" @on-change="changeType" style="width:200px">
+      <Option v-for="item in tableTypes" :value="item.value" :key="item.value">{{ item.label }}</Option>
+    </Select>
     <Button type="primary" @click="tab">切换</Button>
     <Divider />
     <HostVMTable v-show="showHostVmsTable" :data="tableData"/>
+    <AllHostInfo v-show="showHostTable" :data="hostData"/>
     <AllVms v-show="showVmsTable" :data="vmsData"/>
   </div>
 </template>
 <script>
   import HostVMTable from "../components/HostVMTable";
+  import AllHostInfo from "../components/AllHostInfo";
   import AllVms from "../components/AllVms";
   export default {
-    components: {AllVms, HostVMTable},
+    components: {AllVms, HostVMTable,AllHostInfo},
     data () {
       return {
-        type: [
+        moveType: [
           {
             value: 1,
-            label: '按CPU利用率最小'
+            label: '极限迁移'
           },
           {
             value: 2,
-            label: '按内存利用率最小'
+            label: '分批迁移'
+          }
+        ],
+        tableTypes: [
+          {
+            value: 1,
+            label: '主机与虚拟机关系列表'
+          },
+          {
+            value: 2,
+            label: '主机列表'
           },
           {
             value: 3,
-            label: '按碎片率最大'
+            label: '虚拟机列表'
           }
         ],
-        model: 3,
+        tableType: 1,
+        model: 1,
         showHostVmsTable: true,
+        showHostTable: false,
         showVmsTable: false,
         tableData: [],
+        hostData: [],
         vmsData: [],
-        hostNum: ''
+        hostNum: '',
+        showHostNum: false
       }
     },
     created() {
       this.parse()
     },
     methods: {
+      changeType(){
+        if (this.model == 1){
+          this.showHostNum = false
+        }else if (this.model == 2) {
+          this.showHostNum = true
+        }
+      },
       tab() {
-        if (this.showHostVmsTable){
-          this.showVmsTable = true
-          this.showHostVmsTable = false
-        }else {
+        // let todoMoveHostVms = this.$store.getters.getTodoHostVms
+        if (this.tableType == 1){
           this.showHostVmsTable = true
           this.showVmsTable = false
+          this.showHostTable = false
+        }else if (this.tableType == 2){
+          // this.parseHostData(todoMoveHostVms)
+          this.showHostVmsTable = false
+          this.showVmsTable = false
+          this.showHostTable = true
+        }else if (this.tableType == 3){
+          // this.parseVmsData(todoMoveHostVms)
+          this.showHostVmsTable = false
+          this.showVmsTable = true
+          this.showHostTable = false
         }
       },
       parse() {
-        if (this.hostNum == ''){
-          this.hostNum = 10
+        let hosts = this.$store.getters.getAllHostInfo
+        let cpu_unalloc_ratio_1 = []
+        let cpu_unalloc_ratio_0 = []
+        let todoMoveHostVms = []
+        for(let i=0,len=hosts.length;i<len;i++){
+          let host = hosts[i]
+          if (host.cpu_unalloc_ratio == 1){
+            cpu_unalloc_ratio_1.push(host.hostname)
+          }else if(host.cpu_unalloc_ratio == 0){
+            cpu_unalloc_ratio_0.push(host.hostname)
+          }else{
+            todoMoveHostVms.push(host)
+          }
         }
-        let hostVM = this.$store.getters.getHostVM
-        if (this.model == 1) {
-          this.tableData = hostVM.slice(0,this.hostNum)
-        }else if(this.model == 2){
-          this.tableData = hostVM.sort(this.sortByRamUtil).slice(0,this.hostNum)
-        }else if(this.model == 3){
-          this.tableData = hostVM.sort(this.sortByCpuUnAllocRatio).slice(0,this.hostNum)
+        if (this.model == 1){
+          this.tableData = todoMoveHostVms.sort(this.sortByCpuUnAllocRatio)
+        }else if (this.model == 2){
+          if (this.hostNum == ''){
+            this.hostNum = 10
+          }
+          this.tableData = todoMoveHostVms.sort(this.sortByCpuUnAllocRatio).slice(0,this.hostNum)
         }
-        this.$store.commit('setTodoHostVms', this.tableData);
-        this.parseVmsData()
+        this.$store.commit('setTodoHostVms',this.tableData);
+        this.$store.commit('setOtherAllowedPowerOffHostNum',cpu_unalloc_ratio_1.length);
+        console.log("todoMoveHosts: {}" , this.tableData)
+        this.parseHostData(this.tableData)
+        this.parseVmsData(this.tableData)
       },
-      parseVmsData() {
+      parseHostData(todoMoveHosts) {
+        // let allHosts = this.$store.getters.getAllHostInfo
+        // let hostNameAndHost = {}
+        // for(let i=0,len=allHosts.length;i<len;i++){
+        //   let host = allHosts[i]
+        //   hostNameAndHost[host.hostname] = host
+        // }
+        // let hostData = []
+        // for(let j=0,len=todoMoveHosts.length;j<len;j++){
+        //   let _host = todoMoveHosts[j]
+        //   hostData.push(hostNameAndHost[_host.hostname])
+        // }
+        this.hostData = todoMoveHosts.slice(0,50)
+        // this.$store.commit('setTodoHost', hostData)
+        // console.log("TodoHost: {}" , hostData)
+      },
+      parseVmsData(todoMoveHosts) {
         let allVms = this.$store.getters.getAllVms
         let vmIdAndVM = {}
         for(let i=0,len=allVms.length;i<len;i++){
@@ -76,15 +141,19 @@
           vmIdAndVM[vm.vm_id] = vm
         }
         let vmsData = []
-        for(let i=0,len=this.tableData.length;i<len;i++) {
-          let hostVM = this.tableData[i]
+        for(let i=0,len=todoMoveHosts.length;i<len;i++) {
+          let hostVM = todoMoveHosts[i]
           let vmIds = hostVM.vmIdList
+          if (vmIds == undefined){
+            continue;
+          }
           for(let j=0;j<vmIds.length;j++){
             vmsData.push(vmIdAndVM[vmIds[j]])
           }
         }
-        this.vmsData = this.sortByAntiName(vmsData).sort(this.sortByAntiType)
-        this.$store.commit('setTodoVms', this.vmsData)
+        this.vmsData = vmsData.slice(0,50)
+        this.$store.commit('setTodoVms', vmsData)
+        console.log("TodoVms: {}" , vmsData)
       },
       sortByRamUtil: function (obj1, obj2) {//比较函数
         if (obj1.ramutil > obj2.ramutil) {

@@ -14,10 +14,13 @@ export default new Vuex.Store({
     allVms: [],
     hostVM: [],
     todoHostVms: [],
+    todoHost: [],
     todoVms: [],
     moveResult: [],
     allPowerBefore: 0,
-    allPowerAfter: 0
+    allPowerAfter: 0,
+    allowedPowerOffHostNum: 0,
+    otherAllowedPowerOffHostNum: 0,
   },
 
   mutations: {
@@ -37,6 +40,9 @@ export default new Vuex.Store({
     setTodoVms(state,todoVms){
       state.todoVms = todoVms
     },
+    setTodoHost(state,todoHost){
+      state.todoHost = todoHost
+    },
     setMoveResult(state,moveResult){
       state.moveResult = moveResult
     },
@@ -45,6 +51,12 @@ export default new Vuex.Store({
     },
     setAllPowerAfter(state,allPowerAfter){
       state.allPowerAfter = allPowerAfter
+    },
+    setAllowedPowerOffHostNum(state,allowedPowerOffHostNum){
+      state.allowedPowerOffHostNum = allowedPowerOffHostNum
+    },
+    setOtherAllowedPowerOffHostNum(state,otherAllowedPowerOffHostNum){
+      state.otherAllowedPowerOffHostNum = otherAllowedPowerOffHostNum
     },
 
   },
@@ -56,10 +68,13 @@ export default new Vuex.Store({
     getAllVms: state => state.allVms,
     getHostVM: state => state.hostVM,
     getTodoHostVms: state => state.todoHostVms,
+    getTodoHost: state => state.todoHost,
     getTodoVms: state => state.todoVms,
     getMoveResult: state => state.moveResult,
     getAllPowerBefore: state => state.allPowerBefore,
-    getAllPowerAfter: state => state.allPowerAfter
+    getAllPowerAfter: state => state.allPowerAfter,
+    getAllowedPowerOffHostNum: state => state.allowedPowerOffHostNum,
+    getOtherAllowedPowerOffHostNum: state => state.otherAllowedPowerOffHostNum
 
   },
 

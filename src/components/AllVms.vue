@@ -22,66 +22,66 @@
             fixed: 'left'
           },
           {
-            title: 'vm_id',
+            title: '虚拟机ID',
             key: 'vm_id',
             align: 'center',
             width: 200,
             fixed: 'left',
           },
           {
-            title: 'vm_name',
+            title: '虚拟机名称',
             key: 'vm_name',
             align: 'center',
             width: 200,
             fixed: 'left',
           },
           {
-            title: 'cHost',
+            title: '所属主机名',
             key: 'cHost',
             align: 'center',
             width: 200,
             fixed: 'left',
           },
           {
-            title: 'vCpus',
+            title: 'CPU数',
             key: 'vCpus',
             align: 'center',
             width: 100,
           },
           {
-            title: 'vRams',
+            title: '内存(M)',
             key: 'vRams',
             align: 'center',
             width: 100,
           },
+          // {
+          //   title: '内存利用率',
+          //   key: 'vramutil',
+          //   align: 'center',
+          //   width: 100,
+          // },
           {
-            title: 'vramutil',
-            key: 'vramutil',
-            align: 'center',
-            width: 100,
-          },
-          {
-            title: 'vcpuutil',
+            title: 'CPU利用率',
             key: 'vcpuutil',
             align: 'center',
             width: 100,
           },
           {
-            title: 'vmgroup',
+            title: '亲和组',
             align: 'center',
             children: [
               {
-                title: 'type',
+                title: '类型',
                 key: 'type',
                 align: 'center',
                 width: 100,
                 sortable: true
               },
               {
-                title: 'name',
+                title: '名称',
                 key: 'name',
                 align: 'center',
-                width: 100,
+                width: 200,
                 sortable: true
               }
             ]
@@ -93,33 +93,39 @@
           //   width: 200,
           // },
           {
-            title: 'egress_max_kbps',
+            title: '出口带宽',
             key: 'egress_max_kbps',
             align: 'center',
-            width: 200,
+            width: 150,
           },
           {
-            title: 'ingress_max_kbps',
+            title: '入口带宽',
             key: 'ingress_max_kbps',
             align: 'center',
-            width: 200,
+            width: 150,
           },
           {
-            title: 'vnf_name',
+            title: '运行状态',
+            key: 'pwrStatus',
+            align: 'center',
+            width: 150,
+          },
+          {
+            title: '所属VNF',
             key: 'vnf_name',
             align: 'center',
             width: 150,
             fixed: 'right'
           },
           {
-            title: 'vnf_type',
+            title: '所属VNF类型',
             key: 'vnf_type',
             align: 'center',
-            width: 100,
+            width: 120,
             fixed: 'right'
           },
           {
-            title: 'vdu_id',
+            title: '所属VDU',
             key: 'vdu_id',
             align: 'center',
             width: 150,

@@ -6,7 +6,7 @@
                 <Step title="全部主机规格信息解析"></Step>
                 <Step title="已部署虚拟机列表解析"></Step>
                 <Step title="虚拟机与主机对应关系"></Step>
-                <Step title="待迁移虚拟机列表解析"></Step>
+                <Step title="可迁移主机列表"></Step>
                 <Step title="迁移方案产出"></Step>
                 <Step title="可下电主机列表"></Step>
             </Steps>

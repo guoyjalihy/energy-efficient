@@ -36,15 +36,17 @@
       },
       parseVnfVM(tableData) {
         //解析VNFVM
-        let vnfsJson = JSON.parse(this.vnfvm);
-        let vnfs = vnfsJson.vnfs
+        if (this.vnfvm == ''){
+          return
+        }
+        let vnfs = JSON.parse(this.vnfvm);
         let vmAndVnf = {}
         for (let i=0,len=vnfs.length; i<len; i++){
           let vnf = vnfs[i]
           let vms = vnf.vmIdList;
           for (let j=0,len=vms.length; j<len; j++){
             let _vm = vms[j]
-            vmAndVnf[_vm.VMID] = vnf
+            vmAndVnf[_vm.vMID] = vnf
           }
         }
         for (let i=0,len=tableData.length;i<len;i++){
@@ -83,11 +85,14 @@
         }
         for (let i=0,len=tableData.length;i<len;i++){
           let _vm = tableData[i]
-          _vm.vramutil = vmInfo[_vm.vm_id]?vmInfo[_vm.vm_id].vramutil:''
+          // _vm.vramutil = vmInfo[_vm.vm_id]?vmInfo[_vm.vm_id].vramutil:''
           _vm.vcpuutil = vmInfo[_vm.vm_id]?vmInfo[_vm.vm_id].vcpuutil:''
         }
       },
       parseQueryVNFResource(tableData) {
+        if (this.queryVNFResource == ''){
+          return
+        }
         let queryVNFResource = JSON.parse(this.queryVNFResource)
         let vdus = queryVNFResource.VMList
         let vduIdVms = {}
@@ -100,19 +105,19 @@
         for (let i=0,len=tableData.length;i<len;i++){
           let vm = tableData[i]
           for(let vduId in vduIdVms){
-            let vduIdAndName = vduId.split('-VDU-');
-            let vdu_id = vduIdAndName[0]
-            let vdu_name = vduIdAndName[1]
-            if(vm.vm_name.indexOf(vdu_id) != -1 && vm.vm_name.indexOf(vdu_name) != -1){
+            // let vduIdAndName = vduId.split('-VDU-');
+            // let vdu_id = vduIdAndName[0]
+            // let vdu_name = vduIdAndName[1]
+            if(vm.vm_name.indexOf(vduId) != -1){
               vm.vdu_id = vduIdVms[vduId].vdu_id
-              vm.type = vduIdVms[vduId].vmgroup.type
-              vm.name = vduIdVms[vduId].vmgroup.name
-              let direction = vduIdVms[vduId]?vduIdVms[vduId].vnics[0].qos?vduIdVms[vduId].vnics[0].qos[0].direction:'':''
-              if (direction != '' && direction == 'egress'){
-                vm.egress_max_kbps = vduIdVms[vduId]?vduIdVms[vduId].vnics[0].qos[0].max_kbps:''
-              }else if (direction != '' && direction == 'ingress'){
-                vm.ingress_max_kbps = vduIdVms[vduId]?vduIdVms[vduId].vnics[0].qos[0].max_kbps:''
-              }
+              vm.type = vduIdVms[vduId].VMGroup.type
+              vm.name = vduIdVms[vduId].VMGroup.name
+              // let direction = vduIdVms[vduId]?vduIdVms[vduId].vnics[0].qos?vduIdVms[vduId].vnics[0].qos[0].direction:'':''
+              // if (direction != '' && direction == 'egress'){
+              //   vm.egress_max_kbps = vduIdVms[vduId]?vduIdVms[vduId].vnics[0].qos[0].max_kbps:''
+              // }else if (direction != '' && direction == 'ingress'){
+              //   vm.ingress_max_kbps = vduIdVms[vduId]?vduIdVms[vduId].vnics[0].qos[0].max_kbps:''
+              // }
             }
           }
         }

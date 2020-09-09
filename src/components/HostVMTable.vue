@@ -1,5 +1,5 @@
 <template>
-  <Table :columns="columns" :data="data" border height="500"></Table>
+  <Table :columns="columns" :data="data" border height="600"></Table>
 </template>
 <script>
   export default {
@@ -19,71 +19,30 @@
             type: 'index',
             width: 100,
             align: 'center',
-            fixed: 'left',
           },
           {
-            title: 'hostName',
-            key: 'hostName',
+            title: '主机名',
+            key: 'hostname',
+            width: 150,
             align: 'center',
-            width: 200,
-            fixed: 'left',
           },
           {
-            title: 'vmIdList',
+            title: '虚拟机集合',
             key: 'vmIdList',
             align: 'center',
-            width: 500,
-            fixed: 'left',
           },
           {
-            title: 'cputotal',
-            key: 'cputotal',
-            align: 'center',
-            width: 100,
-          },
-          {
-            title: 'cpu_used',
-            key: 'cpu_used',
-            align: 'center',
-            width: 100,
-          },
-          {
-            title: 'cpuutil',
-            key: 'cpuutil',
-            align: 'center',
-            width: 100,
-          },
-          {
-            title: 'cpu_unalloc_ratio',
+            title: '碎片率',
             key: 'cpu_unalloc_ratio',
+            width: 100,
             align: 'center',
-            width: 200,
             sortable: true
-          },
-          {
-            title: 'ramtotal',
-            key: 'ramtotal',
-            align: 'center',
-            width: 100,
-          },
-          {
-            title: 'mem_used',
-            key: 'mem_used',
-            align: 'center',
-            width: 100,
-          },
-          {
-            title: 'ramutil',
-            key: 'ramutil',
-            align: 'center',
-            width: 100,
           },
           {
             title: 'power',
             key: 'power',
+            width: 150,
             align: 'center',
-            width: 200,
-            fixed: 'right',
           }
         ],
       }
