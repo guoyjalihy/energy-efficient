@@ -18,7 +18,7 @@
         value: '',
         vimcm: '',
         hostPM: '',
-        tableData: this.$store.getters.getAllHostInfo.slice(0,50)
+        tableData: this.$store.getters.getAllHosts.slice(0,50)
       }
     },
     methods: {
@@ -26,9 +26,9 @@
         let tableData = this.parseListResourceMap()
         this.parseVimCM(tableData)
         this.parseHostPM(tableData)
-        console.log("hosts:{}",tableData)
+        console.log("allHosts:{}",tableData)
         this.tableData = tableData.sort(this.sortBy).slice(0,50)
-        this.$store.commit('setAllHostInfo', tableData);
+        this.$store.commit('setAllHosts', tableData);
       },
       parseListResourceMap(){
         let hostJson = JSON.parse(this.value);
@@ -40,9 +40,6 @@
           }
           let _host = {}
           _host.hostname = hosts[i].service_host
-          // _host.cAZ = hosts[i].cAZ
-          // _host.cHAs = hosts[i].cHAs[0]?hosts[i].cHAs[0].name:''
-          // _host.cRegion = hosts[i].cRegion
           _host.total_free_cpu = hosts[i].vcpus - hosts[i].vcpus_used
           _host.total_cpu = parseInt(hosts[i].vcpus)
           _host.cpu_unalloc_ratio = (hosts[i].vcpus - hosts[i].vcpus_used) / hosts[i].vcpus

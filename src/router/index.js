@@ -43,6 +43,11 @@ Vue.use(VueRouter)
     component: () => import(/* webpackChunkName: "about" */ '../views/step6.vue')
   },
   {
+    path: '/step7',
+    name: 'step7',
+    component: () => import(/* webpackChunkName: "about" */ '../views/step7.vue')
+  },
+  {
     path: '/test',
     name: 'test',
     // route level code-splitting

@@ -1,5 +1,5 @@
 <template>
-  <Table :columns="columns" :data="data" border height="500"></Table>
+  <Table :columns="columns" :data="data" border :height="height"></Table>
 </template>
 <script>
   export default {
@@ -11,6 +11,12 @@
           return [];
         }
       },
+      height: {
+        type: [Number, String],
+        default() {
+          return "500"
+        }
+      }
     },
     data () {
       return {

@@ -85,7 +85,6 @@
         }
         for (let i=0,len=tableData.length;i<len;i++){
           let _vm = tableData[i]
-          // _vm.vramutil = vmInfo[_vm.vm_id]?vmInfo[_vm.vm_id].vramutil:''
           _vm.vcpuutil = vmInfo[_vm.vm_id]?vmInfo[_vm.vm_id].vcpuutil:''
         }
       },
@@ -105,9 +104,6 @@
         for (let i=0,len=tableData.length;i<len;i++){
           let vm = tableData[i]
           for(let vduId in vduIdVms){
-            // let vduIdAndName = vduId.split('-VDU-');
-            // let vdu_id = vduIdAndName[0]
-            // let vdu_name = vduIdAndName[1]
             if(vm.vm_name.indexOf(vduId) != -1){
               vm.vdu_id = vduIdVms[vduId].vdu_id
               vm.type = vduIdVms[vduId].VMGroup.type

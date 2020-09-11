@@ -10,72 +10,40 @@ export default new Vuex.Store({
 
     //这里放全局参数
 
-    allHostInfo:[],
+    allHosts:[],
     allVms: [],
-    hostVM: [],
-    todoHostVms: [],
-    todoHost: [],
-    todoVms: [],
+    toMoveHosts: [],
     moveResult: [],
-    allPowerBefore: 0,
-    allPowerAfter: 0,
-    allowedPowerOffHostNum: 0,
-    otherAllowedPowerOffHostNum: 0,
+    statisticsInfo: {},
   },
 
   mutations: {
     //这里是set方法
-    setAllHostInfo(state,allHostInfo){
-      state.allHostInfo = allHostInfo
+    setAllHosts(state,allHosts){
+      state.allHosts = allHosts
     },
     setAllVms(state,allVms){
       state.allVms = allVms
     },
-    setHostVM(state,hostVM){
-      state.hostVM = hostVM
-    },
-    setTodoHostVms(state,todoHostVms){
-      state.todoHostVms = todoHostVms
-    },
-    setTodoVms(state,todoVms){
-      state.todoVms = todoVms
-    },
-    setTodoHost(state,todoHost){
-      state.todoHost = todoHost
+    setToMoveHosts(state,toMoveHosts){
+      state.toMoveHosts = toMoveHosts
     },
     setMoveResult(state,moveResult){
       state.moveResult = moveResult
     },
-    setAllPowerBefore(state,allPowerBefore){
-      state.allPowerBefore = allPowerBefore
+    setStatisticsInfo(state,statisticsInfo){
+      state.statisticsInfo = statisticsInfo
     },
-    setAllPowerAfter(state,allPowerAfter){
-      state.allPowerAfter = allPowerAfter
-    },
-    setAllowedPowerOffHostNum(state,allowedPowerOffHostNum){
-      state.allowedPowerOffHostNum = allowedPowerOffHostNum
-    },
-    setOtherAllowedPowerOffHostNum(state,otherAllowedPowerOffHostNum){
-      state.otherAllowedPowerOffHostNum = otherAllowedPowerOffHostNum
-    },
-
   },
 
   getters: {
 
     //get方法
-    getAllHostInfo: state => state.allHostInfo,
+    getAllHosts: state => state.allHosts,
     getAllVms: state => state.allVms,
-    getHostVM: state => state.hostVM,
-    getTodoHostVms: state => state.todoHostVms,
-    getTodoHost: state => state.todoHost,
-    getTodoVms: state => state.todoVms,
+    getToMoveHosts: state => state.toMoveHosts,
     getMoveResult: state => state.moveResult,
-    getAllPowerBefore: state => state.allPowerBefore,
-    getAllPowerAfter: state => state.allPowerAfter,
-    getAllowedPowerOffHostNum: state => state.allowedPowerOffHostNum,
-    getOtherAllowedPowerOffHostNum: state => state.otherAllowedPowerOffHostNum
-
+    getStatisticsInfo: state => state.statisticsInfo,
   },
 
   actions: {
