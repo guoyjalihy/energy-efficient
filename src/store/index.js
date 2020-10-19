@@ -9,11 +9,13 @@ export default new Vuex.Store({
   state: {
 
     //这里放全局参数
-
     allHosts:[],
     allVms: [],
+    allVNFs: [],
+    allHAs: [],
     toMoveHosts: [],
-    moveResult: [],
+    hostMoveResult: [],
+    vmMoveResult: [],
     statisticsInfo: {},
   },
 
@@ -25,11 +27,20 @@ export default new Vuex.Store({
     setAllVms(state,allVms){
       state.allVms = allVms
     },
+    setAllVNFs(state,allVNFs){
+      state.allVNFs = allVNFs
+    },
+    setAllHAs(state,allHAs){
+      state.allHAs = allHAs
+    },
     setToMoveHosts(state,toMoveHosts){
       state.toMoveHosts = toMoveHosts
     },
-    setMoveResult(state,moveResult){
-      state.moveResult = moveResult
+    setHostMoveResult(state,hostMoveResult){
+      state.hostMoveResult = hostMoveResult
+    },
+    setVmMoveResult(state,vmMoveResult){
+      state.vmMoveResult = vmMoveResult
     },
     setStatisticsInfo(state,statisticsInfo){
       state.statisticsInfo = statisticsInfo
@@ -41,8 +52,11 @@ export default new Vuex.Store({
     //get方法
     getAllHosts: state => state.allHosts,
     getAllVms: state => state.allVms,
+    getAllVNFs: state => state.allVNFs,
+    getAllHAs: state => state.allHAs,
     getToMoveHosts: state => state.toMoveHosts,
-    getMoveResult: state => state.moveResult,
+    getHostMoveResult: state => state.hostMoveResult,
+    getVmMoveResult: state => state.vmMoveResult,
     getStatisticsInfo: state => state.statisticsInfo,
   },
 

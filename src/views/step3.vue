@@ -1,16 +1,52 @@
 <template>
   <div class="step3">
-    <HostVMTable :data="tableData"/>
+    <IntegrationTable :height="550" :columns="columns" :tableData="tableData"/>
   </div>
 </template>
 <script>
-  import HostVMTable from "../components/HostVMTable";
-
+  import IntegrationTable from "../components/IntegrationTable"
   export default {
-    components: {HostVMTable},
+    components: {IntegrationTable},
     data() {
       return {
-        tableData: this.$store.getters.getAllHosts.slice(0,50)
+        tableData: this.$store.getters.getAllHosts,
+        columns: [
+          {
+            type: 'index',
+            width: 100,
+            align: 'center',
+          },
+          {
+            title: '主机名称',
+            key: 'name',
+            align: 'center',
+            width: 150,
+          },
+          {
+            title: '所属HA',
+            key: 'cHAs',
+            align: 'center',
+            width: 150,
+          },
+          {
+            title: '虚拟机集合',
+            key: 'vmIdList',
+            align: 'center',
+          },
+          {
+            title: '碎片率',
+            key: 'cpu_unalloc_ratio',
+            width: 100,
+            align: 'center',
+            sortable: true
+          },
+          {
+            title: 'power',
+            key: 'power',
+            width: 150,
+            align: 'center',
+          }
+        ],
       }
     },
     created() {
@@ -25,20 +61,20 @@
           let vm = vms[i]
           if(hostNameAndVmIds[vm.cHost] == undefined){
             let vmIds =  []
-            vmIds.push(vm.vm_id)
+            vmIds.push(vm.name)
             hostNameAndVmIds[vm.cHost] = vmIds
           }else{
-            hostNameAndVmIds[vm.cHost].push(vm.vm_id)
+            hostNameAndVmIds[vm.cHost].push(vm.name)
           }
         }
         for(let j=0,len=hosts.length;j<len;j++){
             let host = hosts[j]
-            host.vmIdList = hostNameAndVmIds[host.hostname]
-            if(hostNameAndVmIds[host.hostname] == undefined){
+            host.vmIdList = hostNameAndVmIds[host.name]
+            if(hostNameAndVmIds[host.name] == undefined){
                 host.vmIdList = []
             }
         }
-        this.tableData = hosts.slice(0,50)
+        this.tableData = hosts
         this.$store.commit('setAllHosts', hosts);
       },
     }

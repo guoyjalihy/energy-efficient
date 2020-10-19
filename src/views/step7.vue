@@ -18,6 +18,10 @@
                 <div id="other" style="height:280px;">
                     预计节省
                     <p style="font-size: 64px;text-align: center;padding-top: 10%">{{this.statisticsInfo.money}}元/月</p>
+                    <p style="text-align: right;padding-top: 11%">
+                        计算公式：休眠主机数*功率*每度电费*PUE*每月小时数 <br/>
+                        其中：电费为0.8元/度，PUE为1.2
+                    </p>
                 </div>
               </Card>
           </i-col>
@@ -40,7 +44,7 @@
     created() {
       let allHosts = this.$store.getters.getAllHosts
       let allVms = this.$store.getters.getAllVms
-      let moveResult = this.$store.getters.getMoveResult
+      let moveResult = this.$store.getters.getHostMoveResult
       let statisticsInfo = {}
       statisticsInfo.hostsNum = allHosts.length
       statisticsInfo.vmsNum = allVms.length
@@ -102,17 +106,18 @@
       statisticsInfo.afterFullHostsNum = afterFullHostsNum
 
 
-      let reserveHostsNum = Math.ceil((allHosts.length - beforeFreeHostsNum - afterFreeHostsNum) * 0.05)
+      let reserveHostsNum = Math.ceil((allHosts.length - beforeFreeHostsNum - afterFreeHostsNum) * 0.15)
       statisticsInfo.reserveHostsNum = reserveHostsNum
-      statisticsInfo.afterRemainderHostsNum = moveResult.length - afterFreeHostsNum - reserveHostsNum -afterFullHostsNum + beforeFullHostsNum
-      let money = ((beforeFreeHostsNum + afterFreeHostsNum) * 200 * 24 * 30) /1000
+      // statisticsInfo.afterRemainderHostsNum = moveResult.length - afterFreeHostsNum - reserveHostsNum -afterFullHostsNum + beforeFullHostsNum
+      //电费/每小时=休眠服务器数 * 功率 * 每度电费 * PUE
+      let money = Math.round((beforeFreeHostsNum + afterFreeHostsNum - reserveHostsNum) * 0.2 * 24 * 30 * 0.8 * 1.2)
       statisticsInfo.money = money
       statisticsInfo.beforeAvgCpuUtil = Math.round((beforeTotalCpuUtil / moveResult.length ) * 100) /100
       statisticsInfo.afterAvgCpuUtil = Math.round((afterTotalCpuUtil / afterHostsNum ) * 100) /100
       statisticsInfo.beforeAvgCpuUnallocRatio = Math.round((beforeTotalFreeCpus / beforeTotalCPUs) * 100)
       statisticsInfo.afterAvgCpuUnallocRatio = Math.round((afterTotalFreeCpus / afterTotalCPUs) * 100)
       statisticsInfo.beforeHostAllocRatio = Math.round(((allHosts.length - beforeFreeHostsNum )/ allHosts.length) * 100)
-      statisticsInfo.afterHostAllocRatio = Math.round(((moveResult.length - afterFreeHostsNum - statisticsInfo.reserveHostsNum)/ (moveResult.length - afterFreeHostsNum )) * 100)
+      statisticsInfo.afterHostAllocRatio = Math.round(((allHosts.length - beforeFreeHostsNum - afterFreeHostsNum - reserveHostsNum)/ (allHosts.length - beforeFreeHostsNum - afterFreeHostsNum )) * 100)
       this.statisticsInfo = statisticsInfo
       console.log("统计结果：{}", statisticsInfo)
     },
@@ -200,10 +205,10 @@
                             formatter: '{b} : {c} ({d}%)'
                         },
                         data: [
-                            {value: this.statisticsInfo.beforeFreeHostsNum + this.statisticsInfo.afterFreeHostsNum, name: '空闲主机'},
+                            {value: this.statisticsInfo.beforeFreeHostsNum + this.statisticsInfo.afterFreeHostsNum - this.statisticsInfo.reserveHostsNum, name: '空闲主机'},
                             {value: this.statisticsInfo.beforeFullHostsNum + this.statisticsInfo.afterFullHostsNum, name: '满载主机'},
                             {value: this.statisticsInfo.reserveHostsNum, name: '预留主机'},
-                            {value: this.statisticsInfo.afterRemainderHostsNum, name: '剩余主机'}
+                            {value: this.statisticsInfo.toMoveHostsNum - this.statisticsInfo.afterFreeHostsNum - this.statisticsInfo.afterFullHostsNum, name: '剩余主机'}
                         ],
                         emphasis: {
                             itemStyle: {
@@ -239,9 +244,10 @@
                 },
                 dataset: {
                     source: [
-                        ['product', 'CPU碎片率', 'CPU利用率', '主机分配率'],
-                        ['迁移前', this.statisticsInfo.beforeAvgCpuUnallocRatio, this.statisticsInfo.beforeAvgCpuUtil, this.statisticsInfo.beforeHostAllocRatio],
-                        ['迁移后', this.statisticsInfo.afterAvgCpuUnallocRatio, this.statisticsInfo.afterAvgCpuUtil, this.statisticsInfo.afterHostAllocRatio]
+                        ['product', '迁移前', '迁移后'],
+                        ['CPU碎片率', this.statisticsInfo.beforeAvgCpuUnallocRatio,  this.statisticsInfo.afterAvgCpuUnallocRatio],
+                        ['CPU利用率', this.statisticsInfo.beforeAvgCpuUtil, this.statisticsInfo.afterAvgCpuUtil],
+                        ['主机分配率', this.statisticsInfo.beforeHostAllocRatio, this.statisticsInfo.afterHostAllocRatio]
                     ]
                 },
                 xAxis: {type: 'category'},
@@ -251,13 +257,6 @@
                     }
                 },
                 series: [
-                    {
-                        type: 'bar',
-                        label: {
-                            show: true,
-                            position: 'top'
-                        },
-                    },
                     {
                         type: 'bar',
                         label: {

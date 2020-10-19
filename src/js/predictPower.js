@@ -18,7 +18,7 @@ export async function predictPower(hosts) {
     for(let i=0,len=hosts.length;i<len;i++){
         let host = hosts[i]
         ids.push(host.hostName)
-        num_vm.push(host.vmIdList.length)
+        num_vm.push(host.vmNameList.length)
         cpu_total.push(host.cputotal)
         mem_total.push(host.ramtotal)
         mem_used.push(host.mem_used)

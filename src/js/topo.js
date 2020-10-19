@@ -1,10 +1,11 @@
 import "../js/jtopo-0.4.8-min"
 
 let scene
+let stage
 function init(canvas) {
     canvas.width = window.innerWidth
-    canvas.height = window.innerHeight * 0.8
-    let stage = new JTopo.Stage(canvas)
+    canvas.height = window.innerHeight * 0.79
+    stage = new JTopo.Stage(canvas)
     stage.eagleEye.visible = true
     scene = new JTopo.Scene()
     stage.add(scene)
@@ -21,11 +22,17 @@ function buildContainer(name,textPosition,fillColor,x,y,width,height){
     scene.add(container)
     return container
 }
-function buildNode(name,fillColor){
+function buildNode(name,fillColor,borderWidth,borderColor){
     let node = new JTopo.Node(name);
     node.textPosition = "Middle_Center";
     if(fillColor != null){
         node.fillColor = fillColor
+    }
+    if(borderColor != null){
+        node.borderColor = borderColor
+    }
+    if(borderWidth != null){
+        node.borderWidth = borderWidth
     }
     scene.add(node);
     return node
@@ -33,5 +40,8 @@ function buildNode(name,fillColor){
 function buildLine(source,target){
     scene.add(new JTopo.Link(source, target));
 }
+function clear(){
+    stage.clear()
+}
 
-export {init,buildContainer,buildNode,buildLine}
+export {init,buildContainer,buildNode,buildLine,clear}

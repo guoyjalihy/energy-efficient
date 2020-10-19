@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import iView from 'iview';
-import 'iview/dist/styles/iview.css';
+import ViewUI from 'view-design';
+import 'view-design/dist/styles/iview.css';
 
-Vue.use(iView);
+Vue.use(ViewUI);
 Vue.use(VueRouter)
 
   const routes = [
