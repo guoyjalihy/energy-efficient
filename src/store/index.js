@@ -9,10 +9,12 @@ export default new Vuex.Store({
   state: {
 
     //这里放全局参数
-    allHosts:[],
+    allHosts: [],
     allVms: [],
     allVNFs: [],
+    vnfAndVmIds: {},
     allHAs: [],
+    currentVNF: "",
     toMoveHosts: [],
     hostMoveResult: [],
     vmMoveResult: [],
@@ -21,28 +23,34 @@ export default new Vuex.Store({
 
   mutations: {
     //这里是set方法
-    setAllHosts(state,allHosts){
+    setAllHosts(state, allHosts) {
       state.allHosts = allHosts
     },
-    setAllVms(state,allVms){
+    setAllVms(state, allVms) {
       state.allVms = allVms
     },
-    setAllVNFs(state,allVNFs){
+    setAllVNFs(state, allVNFs) {
       state.allVNFs = allVNFs
     },
-    setAllHAs(state,allHAs){
+    setVNFAndVmIds(state, vnfAndVmIds) {
+      state.vnfAndVmIds = vnfAndVmIds
+    },
+    setCurrentVNF(state, currentVNF) {
+      state.currentVNF = currentVNF
+    },
+    setAllHAs(state, allHAs) {
       state.allHAs = allHAs
     },
-    setToMoveHosts(state,toMoveHosts){
+    setToMoveHosts(state, toMoveHosts) {
       state.toMoveHosts = toMoveHosts
     },
-    setHostMoveResult(state,hostMoveResult){
+    setHostMoveResult(state, hostMoveResult) {
       state.hostMoveResult = hostMoveResult
     },
-    setVmMoveResult(state,vmMoveResult){
+    setVmMoveResult(state, vmMoveResult) {
       state.vmMoveResult = vmMoveResult
     },
-    setStatisticsInfo(state,statisticsInfo){
+    setStatisticsInfo(state, statisticsInfo) {
       state.statisticsInfo = statisticsInfo
     },
   },
@@ -53,6 +61,8 @@ export default new Vuex.Store({
     getAllHosts: state => state.allHosts,
     getAllVms: state => state.allVms,
     getAllVNFs: state => state.allVNFs,
+    getVNFAndVmIds: state => state.vnfAndVmIds,
+    getCurrentVNF: state => state.currentVNF,
     getAllHAs: state => state.allHAs,
     getToMoveHosts: state => state.toMoveHosts,
     getHostMoveResult: state => state.hostMoveResult,
@@ -68,7 +78,7 @@ export default new Vuex.Store({
 
   modules: {
 
-//这里是我自己理解的是为了给全局变量分组，所以需要写提前声明其他store文件，然后引入这里
+    //这里是我自己理解的是为了给全局变量分组，所以需要写提前声明其他store文件，然后引入这里
 
   }
 

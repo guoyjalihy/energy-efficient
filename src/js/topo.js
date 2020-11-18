@@ -10,7 +10,7 @@ function init(canvas) {
     scene = new JTopo.Scene()
     stage.add(scene)
 }
-function buildContainer(name,textPosition,fillColor,x,y,width,height){
+function buildContainer(name, textPosition, fillColor, x, y, width, height) {
     let container = new JTopo.Container(name)
     container.textPosition = textPosition
     container.fillColor = fillColor
@@ -22,26 +22,26 @@ function buildContainer(name,textPosition,fillColor,x,y,width,height){
     scene.add(container)
     return container
 }
-function buildNode(name,fillColor,borderWidth,borderColor){
+function buildNode(name, fillColor, borderWidth, borderColor) {
     let node = new JTopo.Node(name);
     node.textPosition = "Middle_Center";
-    if(fillColor != null){
+    if (fillColor != null) {
         node.fillColor = fillColor
     }
-    if(borderColor != null){
+    if (borderColor != null) {
         node.borderColor = borderColor
     }
-    if(borderWidth != null){
+    if (borderWidth != null) {
         node.borderWidth = borderWidth
     }
     scene.add(node);
     return node
 }
-function buildLine(source,target){
+function buildLine(source, target) {
     scene.add(new JTopo.Link(source, target));
 }
-function clear(){
-    stage.clear()
+function clear() {
+    stage.remove(scene)
 }
 
-export {init,buildContainer,buildNode,buildLine,clear}
+export { init, buildContainer, buildNode, buildLine, clear }
