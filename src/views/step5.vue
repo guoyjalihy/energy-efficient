@@ -98,6 +98,7 @@ export default {
                 }
               }
             }
+            vmIdList = vmIdList.toString().replace(/,/g, "<br>");
             return h("span", {
               domProps: {
                 innerHTML: vmIdList
@@ -110,14 +111,32 @@ export default {
           key: "move_in_vmIdList",
           align: "center",
           width: 200,
-          fixed: "left"
+          fixed: "left",
+          render: (h, params) => {
+            let vmIdList = params.row.move_in_vmIdList;
+            vmIdList = vmIdList.toString().replace(/,/g, "<br>");
+            return h("span", {
+              domProps: {
+                innerHTML: vmIdList
+              }
+            });
+          }
         },
         {
           title: "迁出虚拟机集合",
           key: "move_out_vmIdList",
           align: "center",
           width: 250,
-          fixed: "left"
+          fixed: "left",
+          render: (h, params) => {
+            let vmIdList = params.row.move_out_vmIdList;
+            vmIdList = vmIdList.toString().replace(/,/g, "<br>");
+            return h("span", {
+              domProps: {
+                innerHTML: vmIdList
+              }
+            });
+          }
         },
         {
           title: "可分配CPU数",
@@ -330,7 +349,16 @@ export default {
           key: "vnf_name",
           align: "center",
           width: 200,
-          fixed: "right"
+          fixed: "right",
+          render: (h, params) => {
+            let vnf_name = params.row.vnf_name;
+            vnf_name = vnf_name.toString().replace(/,/g, "<br>");
+            return h("span", {
+              domProps: {
+                innerHTML: vnf_name
+              }
+            });
+          }
         }
       ],
       vmColumns: [

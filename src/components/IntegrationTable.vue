@@ -144,7 +144,8 @@ export default {
       this.$refs.table.exportCsv({
         filename: "资源池节能迁移策略",
         columns: this.columns,
-        data: currentData
+        data: currentData,
+        quoted: true
       });
     }
   }
